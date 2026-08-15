@@ -353,8 +353,8 @@
     {
       "id": "HEAL_LOCATION_OUDERKERK_MARGRIET_HOUSE_2F",
       "map": "MAP_OUDERKERK_MARGRIET_HOUSE_2F",
-      "x": 1,
-      "y": 1,
+      "x": 4,
+      "y": 4,
       "respawn_map": "MAP_OUDERKERK_MARGRIET_HOUSE_2F",
       "respawn_npc": "LOCALID_NONE",
       "respawn_x": 1,
