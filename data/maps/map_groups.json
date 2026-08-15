@@ -74,7 +74,9 @@
     "gMapGroup_IndoorFiveIslandRoute_Frlg",
     "gMapGroup_IndoorTwoIslandRoute_Frlg",
     "gMapGroup_IndoorSixIslandRoute_Frlg",
-    "gMapGroup_IndoorSevenIslandRoute_Frlg"
+    "gMapGroup_IndoorSevenIslandRoute_Frlg",
+    "gMapGroup_CMTowns",
+    "gMapGroup_CMIndoorOuderkerk"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1160,5 +1162,13 @@
   ],
   "gMapGroup_IndoorSevenIslandRoute_Frlg": [
     "SevenIsland_SevaultCanyon_House_Frlg"
+  ],
+  "gMapGroup_CMTowns": [
+    "Ouderkerk"
+  ],
+  "gMapGroup_CMIndoorOuderkerk": [
+    "Ouderkerk_MargrietHouse_1F_2",
+    "Ouderkerk_MargrietHouse_2F",
+    "Ouderkerk_MargrietHouse_1F"
   ]
 }
