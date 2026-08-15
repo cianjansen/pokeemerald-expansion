@@ -39,6 +39,48 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PlayersHouse_1F_EventScript_Vigoroth2",
       "flag": "FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2"
+    },
+    {
+      "local_id": "LOCALID_OUDERKERK_MARGRIET_HOUSE_1F_SHINX_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 0,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Ouderkerk_MargrietHouse_1F_EventScript_ShinxBall",
+      "flag": "FLAG_HIDE_MARGRIET_HOUSE_1F_STARTER_BALLS"
+    },
+    {
+      "local_id": "LOCALID_OUDERKERK_MARGRIET_HOUSE_1F_RIOLU_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 1,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Ouderkerk_MargrietHouse_1F_EventScript_RioluBall",
+      "flag": "FLAG_HIDE_MARGRIET_HOUSE_1F_STARTER_BALLS"
+    },
+    {
+      "local_id": "LOCALID_OUDERKERK_MARGRIET_HOUSE_1F_PIPLUP_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 2,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Ouderkerk_MargrietHouse_1F_EventScript_PiplupBall",
+      "flag": "FLAG_HIDE_MARGRIET_HOUSE_1F_STARTER_BALLS"
     }
   ],
   "warp_events": [
@@ -60,7 +102,7 @@
       "x": 2,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F",
+      "dest_map": "MAP_OUDERKERK_MARGRIET_HOUSE_2F",
       "dest_warp_id": "0"
     }
   ],

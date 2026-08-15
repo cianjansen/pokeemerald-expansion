@@ -52,8 +52,8 @@
 #else
 
 #define FLAG_TALKED_TO_MARGRIET 0x20 // Set after first talking to Margriet in Ouderkerk_MargrietHouse_2F
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
+#define FLAG_HIDE_MARGRIET_HOUSE_1F_STARTER_BALLS 0x21 // Set once the player picks a starter Pokemon ball in Ouderkerk_MargrietHouse_1F; hides all three balls
+#define FLAG_GOT_MARGRIET_STARTER 0x22 // Set once the player has received their starter Pokemon from Margriet's house
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
