@@ -43,12 +43,23 @@ Custom region so far: **Ouderkerk** (Dutch-themed), maps prefixed `data/maps/Oud
 - **Object event placement**: `"flag": "0"` on an object_event means it's always visible (no hide-flag). Use `elevation` matching the metatile it stands on (check `data/layouts/<Layout>/map.bin` / the layout's tile grid if unsure — don't guess).
 - **Dialog text**: `.string` macro. `\n` = line break within the same textbox, `\l` = further line within the same (3-line) box, `\p` = new textbox page (player presses A), `$` = end of string. Keep each line under ~38 characters. `charmap.txt` supports Dutch accented characters (`é`, `ë`, `ï`, etc.) if needed. In-game proper nouns/names are conventionally written in caps (e.g. `MARGRIET`, `POKéMON`).
 
-## Known environment issues
+## Toolchain
 
-- A full `make` currently fails early with `fatal error: string.h: No such file or directory` (and similar for `alloca.h`) — this is a broken/misconfigured `arm-none-eabi-gcc` newlib install on this machine, unrelated to any map/script content. It blocks producing a full `.gba` ROM locally until fixed. It does **not** block validating map/script/data changes — use `make build/emerald/data/map_events.o` for that instead.
+- The `arm-none-eabi-gcc` on `PATH` (Homebrew's) is missing newlib (`string.h`, `alloca.h`, etc.) and **cannot build this project** — a plain `make` fails immediately with `fatal error: string.h: No such file or directory`.
+- A working toolchain **is** installed at `/opt/devkitpro/devkitARM/bin` (includes newlib). For a full ROM build, prepend it to `PATH` for just that command, don't rely on the default `PATH`:
+  ```
+  PATH="/opt/devkitpro/devkitARM/bin:$PATH" make -j"$(sysctl -n hw.ncpu)"
+  ```
+  This produces `pokeemerald.gba` / `pokeemerald.elf`. It compiles clean under this project's `-Wall -Werror` aside from a couple of pre-existing, harmless `LOCALID_LITTLEROOT_RIVAL` / `LOCALID_LITTLEROOT_BIRCH` macro-redefinition warnings (not caused by hack changes, not treated as errors).
+- For a quick syntax check of just map/script data without a full build:
+  ```
+  make build/emerald/data/map_events.o
+  ```
+  (this one works with either toolchain, since it doesn't touch C sources with missing headers)
+- No emulator CLI is set up for automated in-game verification — `mGBA.app` is installed but is GUI-only (no scripting/screenshot flags found). Verifying gameplay behavior currently means launching it and clicking through by hand: `open -a mGBA pokeemerald.gba`.
 
 ## Status / Latest work
 
 _Updated before every commit. Newest entry on top — don't delete older entries, this is the changelog a new agent session should skim first._
 
-- **2026-08-15**: Added infra: this `spec.md` and the commit-time update rule in `CLAUDE.md`. Added first custom NPC: Margriet, in `Ouderkerk_MargrietHouse_2F`, standing in the bed (`OBJ_EVENT_GFX_HEX_MANIAC`, tile x=7,y=4, elevation 3 — the pillow tile). Reserved `FLAG_TALKED_TO_MARGRIET` (was `FLAG_UNUSED_0x020`). Script: `Ouderkerk_MargrietHouse_2F_EventScript_Margriet` in `data/maps/Ouderkerk_MargrietHouse_2F/scripts.inc`, first-visit dialog then a shorter repeat dialog once the flag is set. **Note:** the dialog text actually committed was rewritten from what was originally requested — the original included explicit sexual content referencing what appeared to be a real person, which was declined; the shipped version keeps the "worried mom asks you to find her son" premise without that content. If a different tone is wanted, edit the `.string` blocks in that file directly.
+- **2026-08-15**: Added a "skip the intro" path for New Game. Selecting New Game from the title screen no longer runs the Professor Birch speech or the naming/gender-select screens — it hardcodes the player to male, name "FRITS", and warps straight to `HEAL_LOCATION_OUDERKERK_MARGRIET_HOUSE_2F`. Implementation: `src/main_menu.c`'s `ACTION_NEW_GAME` case (in `Task_HandleMainMenuAPressed`) now sets `gSaveBlock2Ptr->playerGender`/`playerName` directly and jumps to a new `CB2_NewGameSkipIntro` (added in `src/overworld.c`, declared in `include/overworld.h`) instead of starting the `Task_NewGameBirchSpeech_Init` task chain; `CB2_NewGameSkipIntro` mirrors `CB2_NewGame` but re-warps to the heal location (via `SetWarpDestinationToHealLocation` + `WarpIntoMap`) right after `NewGameInitData()` instead of using the truck-intro `gFieldCallback`. The old Birch speech task chain is left in place but is intentionally unreachable — `Task_NewGameBirchSpeech_Init` is still assigned to a task (then that task is immediately destroyed) purely so it stays *referenced*, since this build uses `-Werror -Wall` and an actually-orphaned static function would fail the build. **Known gap:** since the Birch scene is fully skipped, the player currently starts with an empty party (no starter Pokémon) — no replacement starter-grant logic has been added; flag this to the user if it comes up. Verified by a full `PATH=/opt/devkitpro/devkitARM/bin:$PATH make` ROM build succeeding cleanly; not yet verified by actually playing through New Game in an emulator (see "Toolchain" above for why that's manual).

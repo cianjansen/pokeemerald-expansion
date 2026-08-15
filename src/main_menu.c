@@ -1089,10 +1089,17 @@ static void Task_HandleMainMenuAPressed(u8 taskId)
                 return;
             }
 
-            gPlttBufferUnfaded[0] = RGB_BLACK;
-            gPlttBufferFaded[0] = RGB_BLACK;
+            // Skip the Birch intro speech and naming/gender screens entirely:
+            // spawn directly as a preset character.
+            // (Task_NewGameBirchSpeech_Init is assigned here only to keep it
+            // referenced; the task is destroyed immediately below so it never runs.)
             gTasks[taskId].func = Task_NewGameBirchSpeech_Init;
-            break;
+            gSaveBlock2Ptr->playerGender = MALE;
+            StringCopy(gSaveBlock2Ptr->playerName, COMPOUND_STRING("FRITS"));
+            DestroyTask(taskId);
+            FreeAllWindowBuffers();
+            SetMainCallback2(CB2_NewGameSkipIntro);
+            return;
         case ACTION_CONTINUE:
             gPlttBufferUnfaded[0] = RGB_BLACK;
             gPlttBufferFaded[0] = RGB_BLACK;
