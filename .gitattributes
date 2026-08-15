@@ -27,3 +27,13 @@ Makefile text eol=lf
 
 *.h linguist-language=C
 *.inc linguist-language=Assembly
+
+# Porymap rewrites these files in full on every save regardless of whether
+# their content changed (https://github.com/huderlem/porymap/issues/774).
+# Diff them key-sorted so real changes are visible and no-op rewrites show
+# as empty diffs. Requires local setup (not portable via .gitattributes alone):
+#   git config diff.jsonsorted.textconv "jq --sort-keys ."
+data/layouts/layouts.json diff=jsonsorted
+data/maps/map_groups.json diff=jsonsorted
+src/data/region_map/region_map_sections.json diff=jsonsorted
+src/data/wild_encounters.json diff=jsonsorted

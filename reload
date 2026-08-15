@@ -1,0 +1,29 @@
+#!/bin/bash
+set -e
+
+cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+export DEVKITPRO="${DEVKITPRO:-/opt/devkitpro}"
+export DEVKITARM="${DEVKITARM:-$DEVKITPRO/devkitARM}"
+
+# Porymap rewrites wild_encounters.json (and a few other project files) in
+# full on every save, even when nothing in them actually changed
+# (https://github.com/huderlem/porymap/issues/774). A diff=jsonsorted
+# textconv driver is configured to make `git diff` ignore reorder-only
+# noise; if it reports no real change here, drop it so it doesn't pollute
+# the next commit.
+if [ -n "$(git status --porcelain -- src/data/wild_encounters.json 2>/dev/null)" ] && \
+   [ -z "$(git diff -- src/data/wild_encounters.json 2>/dev/null)" ]; then
+    echo "Discarding no-op wild_encounters.json rewrite (Porymap save noise)"
+    git restore src/data/wild_encounters.json
+fi
+
+make -j"$(sysctl -n hw.ncpu)"
+
+osascript -e 'quit app "mGBA"' 2>/dev/null || true
+sleep 0.5
+open -a mGBA "$(pwd)/pokeemerald.gba"
+
+echo ""
+echo "git status:"
+git status --short
