@@ -269,6 +269,10 @@ PlayersHouse_2F_EventScript_GameCube::
 	msgbox PlayersHouse_2F_Text_ItsAGameCube, MSGBOX_SIGN
 	end
 
+PlayersHouse_2F_EventScript_PC::
+	msgbox PlayersHouse_2F_Text_ItsAPC, MSGBOX_SIGN
+	end
+
 PlayersHouse_2F_Text_ClockIsStopped:
 	.string "The clock is stopped…\p"
 	.string "Better set it and start it!$"
@@ -296,6 +300,10 @@ Common_Text_LookCloserAtMap:
 	.string "{REGION} region map.$"
 
 PlayersHouse_2F_Text_ItsAGameCube:
-	.string "It's a Nintendo GameCube.\p"
-	.string "A Game Boy Advance is connected to\n"
-	.string "serve as the Controller.$"
+	.string "Gamers zijn fucking losers.\p"
+	.string "Lmao.$"
+
+
+PlayersHouse_2F_Text_ItsAPC:
+	.string "Huh? Lo is Silver IV?\p"
+	.string "Lmao.$"

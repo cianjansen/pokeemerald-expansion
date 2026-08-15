@@ -15,7 +15,7 @@
   "connections": null,
   "object_events": [
     {
-      "local_id": "LOCALID_LITTLEROOT_TWIN",
+      "local_id": "LOCALID_OUDERKERK_TWIN",
       "graphics_id": "OBJ_EVENT_GFX_TWIN",
       "x": 16,
       "y": 10,
@@ -55,7 +55,7 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_LITTLEROOT_MOM",
+      "local_id": "LOCALID_OUDERKERK_MOM",
       "graphics_id": "OBJ_EVENT_GFX_MOM",
       "x": 5,
       "y": 8,
@@ -69,33 +69,7 @@
       "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_TRUCK",
-      "x": 2,
-      "y": 10,
-      "elevation": 4,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_TRUCK",
-      "x": 11,
-      "y": 10,
-      "elevation": 4,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK"
-    },
-    {
-      "local_id": "LOCALID_LITTLEROOT_RIVAL",
+      "local_id": "LOCALID_OUDERKERK_RIVAL",
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
       "x": 13,
       "y": 10,
@@ -109,7 +83,7 @@
       "flag": "FLAG_HIDE_LITTLEROOT_TOWN_RIVAL"
     },
     {
-      "local_id": "LOCALID_LITTLEROOT_BIRCH",
+      "local_id": "LOCALID_OUDERKERK_BIRCH",
       "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
       "x": 14,
       "y": 10,
@@ -128,7 +102,7 @@
       "x": 14,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
+      "dest_map": "MAP_OUDERKERK_MARGRIET_HOUSE_1F",
       "dest_warp_id": "1"
     },
     {
@@ -173,42 +147,6 @@
       "var": "VAR_LITTLEROOT_TOWN_STATE",
       "var_value": "1",
       "script": "LittlerootTown_EventScript_GoSaveBirchTrigger"
-    },
-    {
-      "type": "trigger",
-      "x": 8,
-      "y": 9,
-      "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
-      "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger4"
-    },
-    {
-      "type": "trigger",
-      "x": 9,
-      "y": 9,
-      "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
-      "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger5"
-    },
-    {
-      "type": "trigger",
-      "x": 10,
-      "y": 9,
-      "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
-      "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger2"
-    },
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 9,
-      "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
-      "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger3"
     },
     {
       "type": "trigger",

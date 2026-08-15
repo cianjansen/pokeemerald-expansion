@@ -362,10 +362,10 @@ PlayersHouse_1F_Text_RegisteredMom:
 	.string "in the POKéNAV.$"
 
 PlayersHouse_1F_Text_Vigoroth1:
-	.string "Fugiiiiih!$"
+	.string "Lekker Margriet Pale!$"
 
 PlayersHouse_1F_Text_Vigoroth2:
-	.string "Huggoh, uggo uggo…$"
+	.string "Cian Mama lekker$"
 
 PlayersHouse_1F_Text_ReportFromPetalburgGym:
 	.string "INTERVIEWER: …We brought you this\n"
