@@ -35,5 +35,6 @@ Makefile text eol=lf
 #   git config diff.jsonsorted.textconv "jq --sort-keys ."
 data/layouts/layouts.json diff=jsonsorted
 data/maps/map_groups.json diff=jsonsorted
+data/maps/*/map.json diff=jsonsorted
 src/data/region_map/region_map_sections.json diff=jsonsorted
 src/data/wild_encounters.json diff=jsonsorted

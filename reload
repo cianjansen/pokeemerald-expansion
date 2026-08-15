@@ -6,17 +6,20 @@ cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export DEVKITPRO="${DEVKITPRO:-/opt/devkitpro}"
 export DEVKITARM="${DEVKITARM:-$DEVKITPRO/devkitARM}"
 
-# Porymap rewrites wild_encounters.json (and a few other project files) in
-# full on every save, even when nothing in them actually changed
-# (https://github.com/huderlem/porymap/issues/774). A diff=jsonsorted
-# textconv driver is configured to make `git diff` ignore reorder-only
-# noise; if it reports no real change here, drop it so it doesn't pollute
-# the next commit.
-if [ -n "$(git status --porcelain -- src/data/wild_encounters.json 2>/dev/null)" ] && \
-   [ -z "$(git diff -- src/data/wild_encounters.json 2>/dev/null)" ]; then
-    echo "Discarding no-op wild_encounters.json rewrite (Porymap save noise)"
-    git restore src/data/wild_encounters.json
-fi
+# Porymap rewrites wild_encounters.json, every map.json, and a few other
+# project files in full on every save, even when nothing in them actually
+# changed (https://github.com/huderlem/porymap/issues/774). A diff=jsonsorted
+# textconv driver is configured on those paths so `git diff` ignores
+# reorder-only noise, but `git status`/`git diff --quiet` don't honor
+# textconv, so check every modified tracked file's real (non-quiet) diff and
+# drop any that come back empty before they can pollute the next commit.
+while IFS= read -r f; do
+    [ -z "$f" ] && continue
+    if [ -z "$(git diff -- "$f" 2>/dev/null)" ]; then
+        echo "Discarding no-op rewrite of $f (Porymap save noise)"
+        git restore "$f"
+    fi
+done <<< "$(git diff --name-only)"
 
 make -j"$(sysctl -n hw.ncpu)"
 
