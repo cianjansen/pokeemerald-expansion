@@ -9371,10 +9371,10 @@
     {
       "id": "LAYOUT_OUDERKER_AMSTEL",
       "name": "OuderkerAmstel_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 30,
+      "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/OuderkerAmstel/border.bin",
       "blockdata_filepath": "data/layouts/OuderkerAmstel/map.bin"
     },

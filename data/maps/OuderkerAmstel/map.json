@@ -14,21 +14,21 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_OUDERKERKERPLAS",
-      "offset": 0,
-      "direction": "right"
-    },
-    {
       "map": "MAP_CMROUTE1",
       "offset": 0,
       "direction": "up"
+    },
+    {
+      "map": "MAP_OUDERKERKERPLAS",
+      "offset": 0,
+      "direction": "right"
     }
   ],
   "object_events": [
     {
       "local_id": "LOCALID_OUDERKER_AMSTEL_BIKE_BLOCKER",
       "graphics_id": "OBJ_EVENT_GFX_GRETA",
-      "x": 15,
+      "x": 12,
       "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -42,21 +42,37 @@
   ],
   "warp_events": [
     {
-      "x": 5,
-      "y": 17,
+      "x": 6,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_OUDERKERK_MARGRIET_HOUSE_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 14,
-      "y": 17,
+      "x": 13,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_OUDERKER_AMSTEL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_OUDERKER_AMSTEL",
       "dest_warp_id": "0"
     }
   ],
   "coord_events": [
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 1,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "OuderkerAmstel_EventScript_BikeBlockerTrigger"
+    },
     {
       "type": "trigger",
       "x": 11,
@@ -68,7 +84,7 @@
     },
     {
       "type": "trigger",
-      "x": 14,
+      "x": 10,
       "y": 1,
       "elevation": 3,
       "var": "VAR_TEMP_0",
@@ -77,16 +93,7 @@
     },
     {
       "type": "trigger",
-      "x": 13,
-      "y": 1,
-      "elevation": 3,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "OuderkerAmstel_EventScript_BikeBlockerTrigger"
-    },
-    {
-      "type": "trigger",
-      "x": 12,
+      "x": 9,
       "y": 1,
       "elevation": 3,
       "var": "VAR_TEMP_0",
@@ -94,5 +101,30 @@
       "script": "OuderkerAmstel_EventScript_BikeBlockerTrigger"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    }
+  ]
 }
