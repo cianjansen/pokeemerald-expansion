@@ -1626,6 +1626,22 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_OUDERKER_AMSTEL",
+      "name": "OUDERKERK"
+    },
+    {
+      "id": "MAPSEC_OUDERKER_MARGRIET_HOUSE",
+      "name": "MARGRIET'S HOUSE"
+    },
+    {
+      "id": "MAPSEC_OUDERKER_CAS_HOUSE",
+      "name": "CAS' HOUSE"
+    },
+    {
+      "id": "MAPSEC_OUDERKER_JONAS_HOUSE",
+      "name": "JONAS' HOUSE"
     }
   ]
 }

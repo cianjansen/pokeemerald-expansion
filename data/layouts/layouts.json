@@ -9407,6 +9407,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Ouderker_JonasHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/Ouderker_JonasHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_OUDERKER_CAS_HOUSE_1F",
+      "name": "Ouderker_CasHouse_1F_Layout",
+      "width": 30,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Ouderker_CasHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Ouderker_CasHouse_1F/map.bin"
     }
   ]
 }

@@ -56,7 +56,7 @@
 #define FLAG_GOT_MARGRIET_STARTER 0x22 // Set once the player has received their starter Pokemon from Margriet's house
 #define FLAG_GOT_FATBIKE 0x23 // Set once the player has a bike; lets them past the Ouderkerk_FietsBlokker roadblock north of town
 #define FLAG_TALKED_TO_FIETS_BLOKKER 0x24 // Set after first talking to Ouderkerk_FietsBlokker
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
+#define FLAG_TALKED_TO_ANTON 0x25 // Set after first talking to Anton (Mr. Fuji) in Ouderker_CasHouse_1F; gates the one-time Super Potion gift
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
