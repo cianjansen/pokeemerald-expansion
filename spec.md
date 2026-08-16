@@ -6,6 +6,8 @@ A personal Pokémon Emerald romhack built on top of [pokeemerald-expansion](http
 
 Custom region so far: **Ouderkerk** (Dutch-themed), maps prefixed `data/maps/Ouderkerk*`. Content and NPC dialog for this hack are written in Dutch, often as in-jokes for a specific friend group.
 
+**This project is worked on from multiple machines** (as of 2026-08-16: a Mac and a Windows/WSL2 machine), with git used to sync between them. Don't assume the toolchain/OS described in a past session's notes still matches the one you're running in now — check "Toolchain" below for the current session's actual platform, and verify commands work before trusting stale platform-specific paths.
+
 ## Repo layout notes
 
 - This is a standard pret-style decomp. Source of truth for maps is `data/maps/<MapName>/map.json` and `data/layouts/layouts.json`.
@@ -85,7 +87,7 @@ Porymap's "duplicate map" (and hand-copying a `map.json`) copies every symbolic 
 
 ## Status / Latest work
 
-_Updated before every commit. Newest entry on top — don't delete older entries, this is the changelog a new agent session should skim first._
+_Only add an entry here for major/config-level changes — new systems, toolchain/workflow changes, or a bugfix whose lesson generalizes. Routine content work (maps, objects, scripts, dialog) doesn't need an entry. Newest entry on top — don't delete older entries, this is the changelog a new agent session should skim first._
 
 - **2026-08-16**: Further Porymap scaffolding on the new outdoor maps (still work-in-progress, not yet scripted). `OuderkerAmstel`: added a placeholder `OBJ_EVENT_GFX_GYM_GUY` object event (no script/flag set, `script: NULL`), a second warp event `(14,17)` back to `MAP_OUDERKER_AMSTEL` itself (self-referential — likely unfinished; original `(7,15)` warp to `Ouderkerk_MargrietHouse_1F` moved to `(5,17)`), and 5 `coord_event` triggers along `y=-3` (all placeholder `script: NULL`, writing to scratch `VAR_TEMP_0` with value `0`) — **note two of these five are exact duplicates** at `(11,-3)`, likely an accidental double-place in Porymap, not yet deduplicated. `Ouderkerkerplas`: added a placeholder NPC object event named `JONAS` (`OBJ_EVENT_GFX_BIKER`, no script). None of this is wired to real scripts/flags yet — pure map-layout scaffolding, committed as-is per user request; needs scripting + the duplicate coord_event cleanup before it does anything in-game.
 

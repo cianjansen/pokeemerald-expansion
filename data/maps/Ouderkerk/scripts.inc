@@ -1,48 +1,65 @@
 Ouderkerk_MapScripts::
 	.byte 0
 
+@ Thin per-map entry points: set VAR_0x8008 to this map's own bike-blocker
+@ NPC local_id, then hand off to the shared Common_EventScript_BikeBlocker*
+@ logic below. Add one matching pair of these per map that has a bike
+@ blocker (see OuderkerAmstel/scripts.inc for another example) instead of
+@ hardcoding a local_id in the shared scripts themselves — that hardcoding
+@ is exactly the LOCALID_PLAYERS_HOUSE_2F_MOM bug from spec.md's map-cloning
+@ checklist, just pre-empted here instead of hit later.
 Ouderkerk_EventScript_FietsBlokkerTalk::
-	lock
-	faceplayer
-	goto_if_set FLAG_GOT_FATBIKE, Ouderkerk_EventScript_FietsBlokkerTalk_Done
-	call Ouderkerk_EventScript_FietsBlokkerDialog
-	release
-	end
-
-Ouderkerk_EventScript_FietsBlokkerTalk_Done::
-	release
+	setvar VAR_0x8008, LOCALID_OUDERKERK_FIETS_BLOKKER
+	goto Common_EventScript_BikeBlockerTalk
 	end
 
 Ouderkerk_EventScript_FietsBlokkerTrigger::
+	setvar VAR_0x8008, LOCALID_OUDERKERK_FIETS_BLOKKER
+	goto Common_EventScript_BikeBlockerTrigger
+	end
+
+Common_EventScript_BikeBlockerTalk::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_FATBIKE, Common_EventScript_BikeBlockerTalk_Done
+	call Common_EventScript_BikeBlockerDialog
+	release
+	end
+
+Common_EventScript_BikeBlockerTalk_Done::
+	release
+	end
+
+Common_EventScript_BikeBlockerTrigger::
 	lockall
-	goto_if_set FLAG_GOT_FATBIKE, Ouderkerk_EventScript_FietsBlokkerTrigger_Done
-	applymovement LOCALID_OUDERKERK_FIETS_BLOKKER, Common_Movement_FaceUp
+	goto_if_set FLAG_GOT_FATBIKE, Common_EventScript_BikeBlockerTrigger_Done
+	applymovement VAR_0x8008, Common_Movement_FaceUp
 	waitmovement 0
-	call Ouderkerk_EventScript_FietsBlokkerDialog
+	call Common_EventScript_BikeBlockerDialog
 	closemessage
-	applymovement LOCALID_PLAYER, Ouderkerk_Movement_PushPlayerBackSouth
+	applymovement LOCALID_PLAYER, Common_Movement_PushPlayerBackSouth
 	waitmovement 0
 	releaseall
 	end
 
-Ouderkerk_EventScript_FietsBlokkerTrigger_Done::
+Common_EventScript_BikeBlockerTrigger_Done::
 	releaseall
 	end
 
 @ Shared dialog: shows the first-time or repeat message depending on
 @ FLAG_TALKED_TO_FIETS_BLOKKER. Caller is responsible for lock/faceplayer
 @ and closing/releasing afterward. Must be entered via `call`.
-Ouderkerk_EventScript_FietsBlokkerDialog::
-	goto_if_set FLAG_TALKED_TO_FIETS_BLOKKER, Ouderkerk_EventScript_FietsBlokkerDialog_Repeat
+Common_EventScript_BikeBlockerDialog::
+	goto_if_set FLAG_TALKED_TO_FIETS_BLOKKER, Common_EventScript_BikeBlockerDialog_Repeat
 	msgbox Ouderkerk_Text_FietsBlokkerFirst, MSGBOX_DEFAULT
 	setflag FLAG_TALKED_TO_FIETS_BLOKKER
 	return
 
-Ouderkerk_EventScript_FietsBlokkerDialog_Repeat::
+Common_EventScript_BikeBlockerDialog_Repeat::
 	msgbox Ouderkerk_Text_FietsBlokkerRepeat, MSGBOX_DEFAULT
 	return
 
-Ouderkerk_Movement_PushPlayerBackSouth:
+Common_Movement_PushPlayerBackSouth:
 	lock_facing_direction
 	walk_down
 	unlock_facing_direction
@@ -54,7 +71,7 @@ Ouderkerk_Text_FietsBlokkerFirst:
 	.string "Dat moet je niet zonder fiets\n"
 	.string "doen! Je hebt geen fiets?\p"
 	.string "Check even de Ouderkerker Plas\n"
-	.string "hier ten zuiden, ik zag Jonas\l"
+	.string "hier ten oosten, ik zag Jonas\l"
 	.string "daar op een enge Fatbike rondfietsen$"
 
 Ouderkerk_Text_FietsBlokkerRepeat:
