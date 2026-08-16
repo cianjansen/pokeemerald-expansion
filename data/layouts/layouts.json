@@ -9391,10 +9391,10 @@
     {
       "id": "LAYOUT_CMROUTE1",
       "name": "CMroute1_Layout",
-      "width": 30,
-      "height": 60,
+      "width": 40,
+      "height": 72,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/CMroute1/border.bin",
       "blockdata_filepath": "data/layouts/CMroute1/map.bin"
     },
