@@ -16940,3 +16940,190 @@ Level: 13
 - Wrap
 - Leer
 - Thunder Wave
+
+=== TRAINER_OUDERKERK_JORIS ===
+Name: JORIS
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Hardy Nature
+Level: 12
+- Tackle
+- Growl
+- Defense Curl
+
+Totodile
+Hardy Nature
+Level: 13
+- Scratch
+- Leer
+- Rage
+- Water Gun
+
+=== TRAINER_OUDERKERK_BARTEL ===
+Name: BARTEL
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Buizel
+Hardy Nature
+Level: 12
+- Growl
+- Quick Attack
+- Water Gun
+- Pursuit
+
+Totodile
+Hardy Nature
+Level: 14
+- Scratch
+- Leer
+- Rage
+- Water Gun
+
+=== TRAINER_OUDERKERK_GERDA ===
+Name: GERDA
+Class: Lady
+Pic: Lady
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Roselia
+Hardy Nature
+Level: 13
+- Absorb
+- Growth
+- Poison Sting
+- Stun Spore
+
+Treecko
+Hardy Nature
+Level: 12
+- Pound
+- Leer
+- Absorb
+- Quick Attack
+
+=== TRAINER_OUDERKERK_TRUUS ===
+Name: TRUUS
+Class: Lady
+Pic: Lady
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Kricketot
+Hardy Nature
+Level: 12
+- Growl
+- Bide
+
+Roselia
+Hardy Nature
+Level: 14
+- Absorb
+- Growth
+- Poison Sting
+- Stun Spore
+
+Treecko
+Hardy Nature
+Level: 14
+- Pound
+- Leer
+- Absorb
+- Quick Attack
+
+=== TRAINER_OUDERKERK_JAPIE ===
+Name: JAPIE
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Taillow
+Hardy Nature
+Level: 13
+- Growl
+- Focus Energy
+- Quick Attack
+- Wing Attack
+
+Machop
+Hardy Nature
+Level: 14
+- Low Kick
+- Leer
+- Focus Energy
+- Karate Chop
+
+=== TRAINER_OUDERKERK_JELLE ===
+Name: JELLE
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Hardy Nature
+Level: 13
+- Low Kick
+- Leer
+- Focus Energy
+- Karate Chop
+
+Taillow
+Hardy Nature
+Level: 14
+- Growl
+- Focus Energy
+- Quick Attack
+- Wing Attack
+
+Scyther
+Hardy Nature
+Level: 16
+- Quick Attack
+- Focus Energy
+- Pursuit
+- False Swipe
+
+=== TRAINER_OUDERKERK_PIET ===
+Name: PIET
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Scyther
+Hardy Nature
+Level: 15
+- Quick Attack
+- Leer
+- Focus Energy
+- Pursuit
+
+Bagon
+Hardy Nature
+Level: 16
+- Rage
+- Bite
+- Leer

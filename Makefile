@@ -156,7 +156,13 @@ O_LEVEL ?= g
 else
 O_LEVEL ?= 2
 endif
-CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=1 -DTESTING=$(TEST) -D$(GAME_VERSION) -std=gnu17
+# Ouderkerk debug/testing toggles - build with e.g. `make OUDERKERK_DEBUG_FATBIKE=1`
+# (or `./reload OUDERKERK_DEBUG_FATBIKE=1 OUDERKERK_DEBUG_BLAZIKEN=1`) to enable.
+# Off (0) by default so a plain build/reload never ships debug content. See
+# spec.md's "Debug options" section for what each one does.
+OUDERKERK_DEBUG_FATBIKE ?= 0
+OUDERKERK_DEBUG_BLAZIKEN ?= 0
+CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=1 -DTESTING=$(TEST) -D$(GAME_VERSION) -std=gnu17 -DOUDERKERK_DEBUG_FATBIKE=$(OUDERKERK_DEBUG_FATBIKE) -DOUDERKERK_DEBUG_BLAZIKEN=$(OUDERKERK_DEBUG_BLAZIKEN)
 ifeq ($(RELEASE),1)
 	override CPPFLAGS += -DRELEASE
 	ifeq ($(USE_LTO_ON_RELEASE),1)

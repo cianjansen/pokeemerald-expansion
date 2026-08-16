@@ -1959,6 +1959,14 @@ void CB2_NewGameSkipIntro(void)
     StopMapMusic();
     ResetSafariZoneFlag_();
     NewGameInitData();
+#if OUDERKERK_DEBUG_FATBIKE
+    // [DEBUG/TEST TOOL] Skips the Jonas fight - start with the bikes and the
+    // OuderkerAmstel bike-blocker flag already set. Build-time toggle, see
+    // spec.md's "Debug options" section.
+    FlagSet(FLAG_GOT_FATBIKE);
+    AddBagItem(ITEM_MACH_BIKE, 1);
+    AddBagItem(ITEM_ACRO_BIKE, 1);
+#endif
     SetLastHealLocationWarp(HEAL_LOCATION_OUDERKERK_MARGRIET_HOUSE_2F);
     SetWarpDestinationToHealLocation(HEAL_LOCATION_OUDERKERK_MARGRIET_HOUSE_2F);
     WarpIntoMap();

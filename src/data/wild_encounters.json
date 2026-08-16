@@ -36579,6 +36579,75 @@
           }
         },
         {
+          "map": "MAP_CMROUTE1",
+          "base_label": "gCMroute1",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 7,
+                "max_level": 12,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 7,
+                "max_level": 12,
+                "species": "SPECIES_TAILLOW"
+              },
+              {
+                "min_level": 8,
+                "max_level": 13,
+                "species": "SPECIES_BUIZEL"
+              },
+              {
+                "min_level": 8,
+                "max_level": 13,
+                "species": "SPECIES_ROSELIA"
+              },
+              {
+                "min_level": 8,
+                "max_level": 13,
+                "species": "SPECIES_TREECKO"
+              },
+              {
+                "min_level": 8,
+                "max_level": 13,
+                "species": "SPECIES_TOTODILE"
+              },
+              {
+                "min_level": 9,
+                "max_level": 14,
+                "species": "SPECIES_KRICKETOT"
+              },
+              {
+                "min_level": 9,
+                "max_level": 14,
+                "species": "SPECIES_MACHOP"
+              },
+              {
+                "min_level": 10,
+                "max_level": 14,
+                "species": "SPECIES_SCYTHER"
+              },
+              {
+                "min_level": 10,
+                "max_level": 14,
+                "species": "SPECIES_BAGON"
+              },
+              {
+                "min_level": 7,
+                "max_level": 12,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 7,
+                "max_level": 12,
+                "species": "SPECIES_TAILLOW"
+              }
+            ]
+          }
+        },
+        {
           "map": "MAP_OUDERKERKERPLAS",
           "base_label": "gOuderkerkerplas",
           "land_mons": {

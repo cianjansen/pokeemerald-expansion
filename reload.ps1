@@ -7,7 +7,10 @@ $distro = "Ubuntu"
 $mgba = "C:\Program Files\mGBA\mGBA.exe"
 $romUncPath = "\\wsl.localhost\$distro\root\decomps\pokeemerald-expansion\pokeemerald.gba"
 
-wsl -d $distro -- bash -c 'cd ~/decomps/pokeemerald-expansion && make -j$(nproc)'
+# Forward args through, e.g. `powershell -File reload.ps1 OUDERKERK_DEBUG_FATBIKE=1`
+# to enable one of the Ouderkerk debug/testing build toggles (see spec.md).
+$makeArgs = $args -join ' '
+wsl -d $distro -- bash -c "cd ~/decomps/pokeemerald-expansion && make -j`$(nproc) $makeArgs"
 if ($LASTEXITCODE -ne 0) { throw "make failed" }
 
 Get-Process mGBA -ErrorAction SilentlyContinue | Stop-Process -Force

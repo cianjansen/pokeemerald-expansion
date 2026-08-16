@@ -6,7 +6,6 @@ Ouderkerk_MargrietHouse_1F_EventScript_ShinxBall::
 	faceplayer
 	msgbox Ouderkerk_MargrietHouse_1F_Text_MoetJeZonShinx, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Ouderkerk_MargrietHouse_1F_EventScript_PickAnother
-	givemon SPECIES_BLAZIKEN, 100, move1=MOVE_SWIFT
 	givemon SPECIES_SHINX, 5
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Ouderkerk_MargrietHouse_1F_EventScript_GaveStarter
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Ouderkerk_MargrietHouse_1F_EventScript_GaveStarter
@@ -18,7 +17,6 @@ Ouderkerk_MargrietHouse_1F_EventScript_RioluBall::
 	faceplayer
 	msgbox Ouderkerk_MargrietHouse_1F_Text_MoetJeZonRiolu, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Ouderkerk_MargrietHouse_1F_EventScript_PickAnother
-	givemon SPECIES_BLAZIKEN, 100, move1=MOVE_SWIFT
 	givemon SPECIES_RIOLU, 5
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Ouderkerk_MargrietHouse_1F_EventScript_GaveStarter
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Ouderkerk_MargrietHouse_1F_EventScript_GaveStarter
@@ -30,7 +28,6 @@ Ouderkerk_MargrietHouse_1F_EventScript_PiplupBall::
 	faceplayer
 	msgbox Ouderkerk_MargrietHouse_1F_Text_MoetJeZonPiplup, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Ouderkerk_MargrietHouse_1F_EventScript_PickAnother
-	givemon SPECIES_BLAZIKEN, 100, move1=MOVE_SWIFT
 	givemon SPECIES_PIPLUP, 5
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Ouderkerk_MargrietHouse_1F_EventScript_GaveStarter
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Ouderkerk_MargrietHouse_1F_EventScript_GaveStarter
@@ -55,7 +52,6 @@ Ouderkerk_MargrietHouse_1F_EventScript_GaveStarter::
 	additem ITEM_GREAT_BALL, 50
 	additem ITEM_ULTRA_BALL, 50
 	msgbox Ouderkerk_MargrietHouse_1F_Text_EyNouSuccess, MSGBOX_DEFAULT
-	msgbox Ouderkerk_MargrietHouse_1F_Text_DebugBlaziken, MSGBOX_DEFAULT
 	release
 	end
 
@@ -78,9 +74,3 @@ Ouderkerk_MargrietHouse_1F_Text_EyNouSuccess:
 	.string "Ey nou success ermee gek, wat\n"
 	.string "een rotding$"
 
-@ [DEBUG/TEST TOOL] Not part of the story — flags the free LV.100 BLAZIKEN
-@ (SWIFT) as a testing aid, plus the 50/50/50 Poké/Great/Ultra Balls above.
-Ouderkerk_MargrietHouse_1F_Text_DebugBlaziken:
-	.string "DEBUG: je krijgt er ook een\n"
-	.string "LV. 100 BLAZIKEN (SWIFT) bij,\l"
-	.string "puur als test-tool$"

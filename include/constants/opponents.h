@@ -862,13 +862,24 @@
 #define TRAINER_RIJKE_PENSIONADO            855
 #define TRAINER_SARA                        856
 #define TRAINER_OUDERKERK_JONAS             857 // Named TRAINER_OUDERKERK_JONAS, not TRAINER_JONAS - that name is already taken by a vanilla Route123 Ninja Boy
+#define TRAINER_OUDERKERK_JORIS              858
+#define TRAINER_OUDERKERK_BARTEL             859
+#define TRAINER_OUDERKERK_GERDA              860
+#define TRAINER_OUDERKERK_JAPIE              861
+#define TRAINER_OUDERKERK_JELLE              862
+#define TRAINER_OUDERKERK_TRUUS              863
+#define TRAINER_OUDERKERK_PIET               864
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
+// Bumped MAX_TRAINERS_COUNT_EMERALD from 864 to 1864 (2026-08-17) to get 1000 trainers of headroom in one
+// go instead of hitting this ceiling again for every future batch of Ouderkerk trainers. This shifts
+// SYSTEM_FLAGS (and everything defined relative to it in constants/flags.h) to a new bit offset, which
+// desyncs any pre-existing save's story/system flags - deliberate, saves are not being preserved right now.
 
-#define TRAINERS_COUNT_EMERALD     858
-#define MAX_TRAINERS_COUNT_EMERALD 864
+#define TRAINERS_COUNT_EMERALD     865
+#define MAX_TRAINERS_COUNT_EMERALD 1864
 
 #if IS_FRLG
 #define TRAINERS_COUNT                      TRAINERS_COUNT_FRLG

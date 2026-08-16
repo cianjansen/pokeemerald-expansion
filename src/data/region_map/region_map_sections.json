@@ -1646,6 +1646,10 @@
     {
       "id": "MAPSEC_OUDERKER_JONAS_HOUSE",
       "name": "JONAS' HOUSE"
+    },
+    {
+      "id": "MAPSEC_CMROUTE1",
+      "name": "ROUTE 1 - DE AMSTEL"
     }
   ]
 }
