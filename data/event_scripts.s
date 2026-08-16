@@ -1746,3 +1746,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Ouderkerk_MargrietHouse_2F/scripts.inc"
 
 	.include "data/maps/Ouderkerk_MargrietHouse_1F/scripts.inc"
+
+	.include "data/maps/OuderkerAmstel/scripts.inc"
+
+	.include "data/maps/Ouderkerkerplas/scripts.inc"
+
+	.include "data/maps/CMroute1/scripts.inc"

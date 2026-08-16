@@ -9367,6 +9367,36 @@
       "border_filepath": "data/layouts/Ouderkerk_MargrietHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/Ouderkerk_MargrietHouse_1F/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_OUDERKER_AMSTEL",
+      "name": "OuderkerAmstel_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/OuderkerAmstel/border.bin",
+      "blockdata_filepath": "data/layouts/OuderkerAmstel/map.bin"
+    },
+    {
+      "id": "LAYOUT_OUDERKERKERPLAS",
+      "name": "Ouderkerkerplas_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Ouderkerkerplas/border.bin",
+      "blockdata_filepath": "data/layouts/Ouderkerkerplas/map.bin"
+    },
+    {
+      "id": "LAYOUT_CMROUTE1",
+      "name": "CMroute1_Layout",
+      "width": 30,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/CMroute1/border.bin",
+      "blockdata_filepath": "data/layouts/CMroute1/map.bin"
     }
   ]
 }
