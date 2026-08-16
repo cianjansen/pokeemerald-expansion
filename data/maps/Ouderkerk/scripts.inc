@@ -27,6 +27,7 @@ Common_EventScript_BikeBlockerTalk::
 	end
 
 Common_EventScript_BikeBlockerTalk_Done::
+	msgbox Ouderkerk_Text_FietsBlokkerSuccess, MSGBOX_DEFAULT
 	release
 	end
 
@@ -65,6 +66,17 @@ Common_Movement_PushPlayerBackSouth:
 	unlock_facing_direction
 	step_end
 
+@ Shared "Healer" NPC (Scientist sprite) - reused on multiple maps. Just
+@ point any map's Healer object_event's script straight at this symbol,
+@ no per-map wrapper needed since it doesn't reference its own local_id.
+Common_EventScript_Healer::
+	lock
+	faceplayer
+	msgbox Common_Text_HealerHeals, MSGBOX_DEFAULT
+	special HealPlayerParty
+	release
+	end
+
 Ouderkerk_Text_FietsBlokkerFirst:
 	.string "Hey Fritta, van Ouderkerk naar\n"
 	.string "Amsterdam is echt tering ver.\p"
@@ -77,3 +89,12 @@ Ouderkerk_Text_FietsBlokkerFirst:
 Ouderkerk_Text_FietsBlokkerRepeat:
 	.string "Haal die Fatbike van Jonas bij\n"
 	.string "de Plas, dan kan je naar 'dam$"
+
+Ouderkerk_Text_FietsBlokkerSuccess:
+	.string "Success met naar de stad\n"
+	.string "fietsen gek, echt een\l"
+	.string "pokke eind$"
+
+Common_Text_HealerHeals:
+	.string "Hier heb je 5-MEO-MIPT,\n"
+	.string "daar gaan die beesies hard van$"

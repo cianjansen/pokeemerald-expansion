@@ -16917,3 +16917,26 @@ Hardy Nature
 Level: 3
 - Tackle
 - Growl
+
+=== TRAINER_OUDERKERK_JONAS ===
+Name: JONAS
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Bagon
+Hardy Nature
+Level: 9
+- Rage
+- Bite
+- Leer
+
+Dratini
+Hardy Nature
+Level: 13
+- Wrap
+- Leer
+- Thunder Wave

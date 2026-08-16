@@ -1959,6 +1959,7 @@ void CB2_NewGameSkipIntro(void)
     StopMapMusic();
     ResetSafariZoneFlag_();
     NewGameInitData();
+    SetLastHealLocationWarp(HEAL_LOCATION_OUDERKERK_MARGRIET_HOUSE_2F);
     SetWarpDestinationToHealLocation(HEAL_LOCATION_OUDERKERK_MARGRIET_HOUSE_2F);
     WarpIntoMap();
     ResetInitialPlayerAvatarState();

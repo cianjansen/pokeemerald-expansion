@@ -7,11 +7,15 @@ Ouderkerk_MargrietHouse_2F_EventScript_Margriet::
 	goto_if_set FLAG_TALKED_TO_MARGRIET, Ouderkerk_MargrietHouse_2F_EventScript_MargrietRepeat
 	msgbox Ouderkerk_MargrietHouse_2F_Text_MargrietFirst, MSGBOX_DEFAULT
 	setflag FLAG_TALKED_TO_MARGRIET
+	setrespawn HEAL_LOCATION_OUDERKERK_MARGRIET_HOUSE_2F
+	special HealPlayerParty
 	release
 	end
 
 Ouderkerk_MargrietHouse_2F_EventScript_MargrietRepeat::
 	msgbox Ouderkerk_MargrietHouse_2F_Text_MargrietRepeat, MSGBOX_DEFAULT
+	setrespawn HEAL_LOCATION_OUDERKERK_MARGRIET_HOUSE_2F
+	special HealPlayerParty
 	release
 	end
 
