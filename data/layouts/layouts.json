@@ -9417,6 +9417,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Ouderker_CasHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/Ouderker_CasHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_AMSTERDAM_ZUID",
+      "name": "AmsterdamZuid_Layout",
+      "width": 40,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/AmsterdamZuid/border.bin",
+      "blockdata_filepath": "data/layouts/AmsterdamZuid/map.bin"
     }
   ]
 }
