@@ -1,0 +1,64 @@
+CMroute1 - Next Trainers (planning notes)
+==========================================
+
+Roster:
+- Grandma 1: posh
+- Grandma 2: posh
+- Fisherman 1: retired, chill guy
+- Fisherman 2: rich boat guy
+- Biker 1: young biker
+- Biker 2: older biker
+
+Available Pokemon pool: Scyther, Kricketot, Bagon, Buizel, Bidoof, Roselia,
+Machop, Totodile, Treecko, Taillow
+
+Levels: roughly 12-18. Each trainer has 2 or 3 Pokemon.
+
+
+Proposed teams
+--------------
+
+Grandma 1 (posh) - 2 Pokemon
+  Roselia    Lv16
+  Scyther    Lv17
+  Elegant garden-party pair - a prized flower and a sharp, refined blade-dancer.
+
+Grandma 2 (posh) - 3 Pokemon
+  Kricketot  Lv13
+  Treecko    Lv15
+  Roselia    Lv17
+  Shares Roselia with Grandma 1 to read as a matched pair, rounded out with
+  daintier/sleeker picks.
+
+Fisherman 1 - retired, chill guy - 2 Pokemon
+  Bidoof     Lv14
+  Totodile   Lv16
+  Plain, unhurried, easygoing team - nothing flashy.
+
+Fisherman 2 - rich boat guy - 3 Pokemon
+  Buizel     Lv14
+  Totodile   Lv16
+  Bagon      Lv18
+  Sporty water mons plus Bagon as his rare "prized catch" flex.
+
+Biker 1 - young biker - 2 Pokemon
+  Taillow    Lv13
+  Machop     Lv15
+  Fast and scrappy.
+
+Biker 2 - older biker - 3 Pokemon
+  Machop     Lv15
+  Scyther    Lv17
+  Bagon      Lv18
+  Shares Machop with Biker 1 (same "gang"), tougher/beefier overall as the
+  senior member.
+
+
+Notes
+-----
+- All 10 pool species get used at least once; Roselia/Scyther/Totodile/Bagon/
+  Machop are each reused once across two trainers for thematic pairing
+  (grandmas share Roselia, bikers share Machop, etc.) without any trainer
+  feeling identical to another.
+- Natures/movesets not decided yet - propose separately once teams are
+  confirmed.
