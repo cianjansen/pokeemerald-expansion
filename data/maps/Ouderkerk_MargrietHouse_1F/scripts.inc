@@ -42,6 +42,8 @@ Ouderkerk_MargrietHouse_1F_EventScript_PickAnother::
 Ouderkerk_MargrietHouse_1F_EventScript_GaveStarter::
 	setflag FLAG_GOT_MARGRIET_STARTER
 	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_RECEIVED_RUNNING_SHOES
+	setflag FLAG_SYS_B_DASH
 	setflag FLAG_HIDE_MARGRIET_HOUSE_1F_STARTER_BALLS
 	removeobject LOCALID_OUDERKERK_MARGRIET_HOUSE_1F_SHINX_BALL
 	removeobject LOCALID_OUDERKERK_MARGRIET_HOUSE_1F_RIOLU_BALL
