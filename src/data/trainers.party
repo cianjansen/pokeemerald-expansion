@@ -16877,3 +16877,43 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_RIJKE_PENSIONADO ===
+Name: PENSIONADO
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Magikarp
+Hardy Nature
+Level: 3
+- Splash
+
+Goldeen
+Hardy Nature
+Level: 3
+- Peck
+- Tail Whip
+
+=== TRAINER_SARA ===
+Name: SARA
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Bidoof
+Hardy Nature
+Level: 2
+- Tackle
+
+Starly
+Hardy Nature
+Level: 3
+- Tackle
+- Growl
