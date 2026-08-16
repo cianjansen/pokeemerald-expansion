@@ -82,3 +82,11 @@ Ouderkerkerplas_Text_JonasGivesBike:
 	.string "hebben.\p"
 	.string "Ik moet toch naar huis, er is\n"
 	.string "betonrot in de vloer$"
+
+Ouderkerkerplas_EventScript_NoSwimmingSign::
+	msgbox Ouderkerkerplas_Text_NoSwimmingSign, MSGBOX_SIGN
+	end
+
+Ouderkerkerplas_Text_NoSwimmingSign:
+	.string "Absoluut niet zwemmen hier.\n"
+	.string "Kapot veel blauwalg ouwe.$"

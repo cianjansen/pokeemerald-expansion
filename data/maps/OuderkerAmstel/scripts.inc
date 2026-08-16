@@ -25,6 +25,10 @@ OuderkerAmstel_EventScript_MargrietHouseSign::
 	msgbox OuderkerAmstel_Text_MargrietHouseSign, MSGBOX_SIGN
 	end
 
+OuderkerAmstel_EventScript_TownSign::
+	msgbox OuderkerAmstel_Text_TownSign, MSGBOX_SIGN
+	end
+
 OuderkerAmstel_Text_JonasHouseSign:
 	.string "Casa di Michel, en ook\n"
 	.string "Marieke, en Jonas, oh ja\l"
@@ -37,3 +41,8 @@ OuderkerAmstel_Text_CasHouseSign:
 
 OuderkerAmstel_Text_MargrietHouseSign:
 	.string "Mama Margriet woont hier$"
+
+OuderkerAmstel_Text_TownSign:
+	.string "Ouderkerk a/d Amstel.\n"
+	.string "Als je geen Porsche hebt\l"
+	.string "ben je arm.$"
