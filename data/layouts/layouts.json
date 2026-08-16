@@ -9371,8 +9371,8 @@
     {
       "id": "LAYOUT_OUDERKER_AMSTEL",
       "name": "OuderkerAmstel_Layout",
-      "width": 30,
-      "height": 30,
+      "width": 24,
+      "height": 26,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/OuderkerAmstel/border.bin",
@@ -9397,6 +9397,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/CMroute1/border.bin",
       "blockdata_filepath": "data/layouts/CMroute1/map.bin"
+    },
+    {
+      "id": "LAYOUT_OUDERKER_JONAS_HOUSE_1F",
+      "name": "Ouderker_JonasHouse_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Ouderker_JonasHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Ouderker_JonasHouse_1F/map.bin"
     }
   ]
 }

@@ -59,7 +59,7 @@
       "x": 5,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_OUDERKER_AMSTEL",
+      "dest_map": "MAP_OUDERKER_JONAS_HOUSE_1F",
       "dest_warp_id": "0"
     }
   ],
@@ -108,7 +108,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "OuderkerAmstel_EventScript_JonasHouseSign"
     },
     {
       "type": "sign",
@@ -116,7 +116,7 @@
       "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "OuderkerAmstel_EventScript_CasHouseSign"
     },
     {
       "type": "sign",
@@ -124,7 +124,7 @@
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "OuderkerAmstel_EventScript_MargrietHouseSign"
     }
   ]
 }

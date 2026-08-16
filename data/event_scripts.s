@@ -1752,3 +1752,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Ouderkerkerplas/scripts.inc"
 
 	.include "data/maps/CMroute1/scripts.inc"
+
+	.include "data/maps/Ouderker_JonasHouse_1F/scripts.inc"
