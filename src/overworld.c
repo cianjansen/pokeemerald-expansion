@@ -1967,6 +1967,13 @@ void CB2_NewGameSkipIntro(void)
     AddBagItem(ITEM_MACH_BIKE, 1);
     AddBagItem(ITEM_ACRO_BIKE, 1);
 #endif
+#if OUDERKERK_DEBUG_IGNORE_TRAINERS
+    // [DEBUG/TEST TOOL] Stops trainers from pulling the player into a battle
+    // on sight while walking around (still battle-able by talking to them on
+    // purpose) - wired through OW_FLAG_NO_TRAINER_SEE (config/overworld.h).
+    // Build-time toggle, see spec.md's "Debug options" section.
+    FlagSet(FLAG_DEBUG_NO_TRAINER_SEE);
+#endif
     SetLastHealLocationWarp(HEAL_LOCATION_OUDERKERK_MARGRIET_HOUSE_2F);
     SetWarpDestinationToHealLocation(HEAL_LOCATION_OUDERKERK_MARGRIET_HOUSE_2F);
     WarpIntoMap();

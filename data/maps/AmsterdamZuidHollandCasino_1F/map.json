@@ -99,20 +99,6 @@
       "flag": "0"
     },
     {
-      "local_id": "CASINO_PATRON_1",
-      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 20,
-      "y": 5,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
       "local_id": "CASINO_CHIPS_GUY",
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
       "x": 11,
@@ -155,6 +141,20 @@
       "flag": "0"
     },
     {
+      "local_id": "CASINO_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "x": 25,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AmsterdamZuidHollandCasino_1F_EventScript_GambleGamble",
+      "flag": "0"
+    },
+    {
       "local_id": "CASINO_PATRON_2",
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
       "x": 20,
@@ -169,17 +169,17 @@
       "flag": "0"
     },
     {
-      "local_id": "CASINO_MANIAC",
-      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
-      "x": 25,
-      "y": 13,
+      "local_id": "CASINO_PATRON_1",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "x": 20,
+      "y": 5,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "AmsterdamZuidHollandCasino_1F_EventScript_GambleGamble",
+      "script": "NULL",
       "flag": "0"
     }
   ],

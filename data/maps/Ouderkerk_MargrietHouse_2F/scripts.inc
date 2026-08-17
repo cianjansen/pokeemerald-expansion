@@ -13,6 +13,7 @@ Ouderkerk_MargrietHouse_2F_OnLoad:
 	goto_if_set FLAG_DEBUG_GOT_BLAZIKEN, Ouderkerk_MargrietHouse_2F_OnLoad_Done
 	givemon SPECIES_BLAZIKEN, 100, move1=MOVE_SWIFT
 	setflag FLAG_DEBUG_GOT_BLAZIKEN
+	setflag FLAG_SYS_POKEMON_GET
 Ouderkerk_MargrietHouse_2F_OnLoad_Done:
 	end
 #endif
