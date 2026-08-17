@@ -9422,7 +9422,7 @@
       "id": "LAYOUT_AMSTERDAM_ZUID",
       "name": "AmsterdamZuid_Layout",
       "width": 40,
-      "height": 28,
+      "height": 38,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/AmsterdamZuid/border.bin",

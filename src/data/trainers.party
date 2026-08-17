@@ -17113,17 +17113,26 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Scyther
+Grotle
 Hardy Nature
-Level: 15
-- Quick Attack
-- Leer
-- Focus Energy
-- Pursuit
+Level: 20
+- Withdraw
+- Absorb
+- Razor Leaf
+- Curse
 
-Bagon
+Weavile
 Hardy Nature
-Level: 16
-- Rage
-- Bite
-- Leer
+Level: 20
+- Quick Attack
+- Screech
+- Feint Attack
+- Taunt
+
+Vigoroth
+Hardy Nature
+Level: 20
+- Focus Energy
+- Encore
+- Uproar
+- Fury Swipes

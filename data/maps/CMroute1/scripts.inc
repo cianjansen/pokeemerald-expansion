@@ -1,6 +1,18 @@
 CMroute1_MapScripts::
 	.byte 0
 
+CMroute1_EventScript_AmstelSign::
+	msgbox CMroute1_Text_AmstelSign, MSGBOX_SIGN
+	end
+
+CMroute1_EventScript_HeyHoeKomJijHierSign::
+	msgbox CMroute1_Text_HeyHoeKomJijHierSign, MSGBOX_SIGN
+	end
+
+CMroute1_EventScript_VeiligBinnenDeRingSign::
+	msgbox CMroute1_Text_VeiligBinnenDeRingSign, MSGBOX_SIGN
+	end
+
 CMroute1_EventScript_Joris::
 	trainerbattle_single TRAINER_OUDERKERK_JORIS, CMroute1_Text_JorisIntro, CMroute1_Text_JorisDefeat
 	msgbox CMroute1_Text_JorisDefeat, MSGBOX_AUTOCLOSE
@@ -87,3 +99,13 @@ CMroute1_Text_PietIntro:
 CMroute1_Text_PietDefeat:
 	.string "PIET: Noh man ik zweer, moet op\n"
 	.string "ander bonnetje$"
+
+CMroute1_Text_AmstelSign:
+	.string "De Amstel. Amsterdam: 40km$"
+
+CMroute1_Text_HeyHoeKomJijHierSign:
+	.string "Hey hoe kom jij hier pik$"
+
+CMroute1_Text_VeiligBinnenDeRingSign:
+	.string "Pfff bijna weer veilig binnen\l"
+	.string "de ring$"

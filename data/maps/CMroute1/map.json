@@ -17,6 +17,11 @@
       "map": "MAP_OUDERKER_AMSTEL",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_AMSTERDAM_ZUID",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -40,7 +45,7 @@
       "x": 26,
       "y": 54,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -54,7 +59,7 @@
       "x": 29,
       "y": 42,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -135,5 +140,30 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 63,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "CMroute1_EventScript_AmstelSign"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 43,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "CMroute1_EventScript_HeyHoeKomJijHierSign"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "CMroute1_EventScript_VeiligBinnenDeRingSign"
+    }
+  ]
 }
