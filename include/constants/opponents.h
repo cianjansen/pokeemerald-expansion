@@ -878,7 +878,11 @@
 // SYSTEM_FLAGS (and everything defined relative to it in constants/flags.h) to a new bit offset, which
 // desyncs any pre-existing save's story/system flags - deliberate, saves are not being preserved right now.
 
-#define TRAINERS_COUNT_EMERALD     865
+#define TRAINER_OUDERKERK_MAX_BRUNDT          865
+#define TRAINER_OUDERKERK_K_TAYLOR            866
+#define TRAINER_OUDERKERK_TOBIAS              867
+
+#define TRAINERS_COUNT_EMERALD     868
 #define MAX_TRAINERS_COUNT_EMERALD 1864
 
 #if IS_FRLG

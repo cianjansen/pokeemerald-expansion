@@ -1758,3 +1758,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Ouderker_CasHouse_1F/scripts.inc"
 
 	.include "data/maps/AmsterdamZuid/scripts.inc"
+
+	.include "data/maps/AmsterdamZuidHollandCasino_1F/scripts.inc"

@@ -17136,3 +17136,84 @@ Level: 20
 - Encore
 - Uproar
 - Fury Swipes
+
+=== TRAINER_OUDERKERK_MAX_BRUNDT ===
+Name: MAX BRUNDT
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Persian
+Hardy Nature
+Level: 19
+- Scratch
+- Growl
+- Bite
+
+Chansey
+Hardy Nature
+Level: 17
+- Growl
+- Refresh
+- Soft-Boiled
+- Double Slap
+
+=== TRAINER_OUDERKERK_K_TAYLOR ===
+Name: K. TAYLOR
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Meowth
+Hardy Nature
+Level: 18
+- Scratch
+- Growl
+- Bite
+
+Dunsparce
+Hardy Nature
+Level: 20
+- Rage
+- Defense Curl
+- Yawn
+- Glare
+
+=== TRAINER_OUDERKERK_TOBIAS ===
+Name: TOBIAS
+Class: Gentleman
+Pic: Gentleman
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Persian
+Hardy Nature
+Level: 22
+- Scratch
+- Growl
+- Bite
+- Pay Day
+
+Honchkrow
+Hardy Nature
+Level: 23
+- Astonish
+- Pursuit
+- Haze
+- Wing Attack
+
+Sableye
+Hardy Nature
+Level: 25
+- Night Shade
+- Fury Swipes
+- Fake Out
+- Detect

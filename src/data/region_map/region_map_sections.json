@@ -1650,6 +1650,14 @@
     {
       "id": "MAPSEC_CMROUTE1",
       "name": "ROUTE 1 - DE AMSTEL"
+    },
+    {
+      "id": "MAPSEC_AMSTERDAM_ZUID",
+      "name": "AMSTERDAM ZUID"
+    },
+    {
+      "id": "MAPSEC_AMSTERDAM_ZUID_HOLLAND_CASINO",
+      "name": "HOLLAND CASINO"
     }
   ]
 }

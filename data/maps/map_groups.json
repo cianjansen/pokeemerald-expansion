@@ -76,7 +76,8 @@
     "gMapGroup_IndoorSixIslandRoute_Frlg",
     "gMapGroup_IndoorSevenIslandRoute_Frlg",
     "gMapGroup_CMTowns",
-    "gMapGroup_CMIndoorOuderkerk"
+    "gMapGroup_CMIndoorOuderkerk",
+    "gMapGroup_CMIndoorAmsterdamZuid"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1176,5 +1177,8 @@
     "Ouderkerk_MargrietHouse_1F",
     "Ouderker_JonasHouse_1F",
     "Ouderker_CasHouse_1F"
+  ],
+  "gMapGroup_CMIndoorAmsterdamZuid": [
+    "AmsterdamZuidHollandCasino_1F"
   ]
 }
