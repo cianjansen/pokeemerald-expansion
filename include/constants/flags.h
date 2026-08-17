@@ -61,7 +61,7 @@
 #define FLAG_GOT_CASINO_EEVEE 0x27 // Set once the player receives the free Eevee gift from the winning gambler NPC in AmsterdamZuidHollandCasino_1F
 #define FLAG_TOBIAS_BEATEN    0x28 // Set once the player beats TOBIAS in AmsterdamZuidHollandCasino_1F; gates the one-time 999,999-money + TM Shadow Ball reward
 #define FLAG_DEBUG_NO_TRAINER_SEE    0x29 // [DEBUG/TEST TOOL] Wired to OW_FLAG_NO_TRAINER_SEE (config/overworld.h) - set at New Game when OUDERKERK_DEBUG_IGNORE_TRAINERS=1, stops trainers from pulling the player into a battle on sight (can still be talked to on purpose)
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
+#define FLAG_MATCHA_PURCHASED    0x2A // Set once the player buys a Matcha from the AmsterdamZuidMatchaShop seller; lets them past AmsterdamZuid's Matcha Blocker checkpoint
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag

@@ -1179,6 +1179,8 @@
     "Ouderker_CasHouse_1F"
   ],
   "gMapGroup_CMIndoorAmsterdamZuid": [
-    "AmsterdamZuidHollandCasino_1F"
+    "AmsterdamZuidHollandCasino_1F",
+    "AmsterdamZuidMatchaShop",
+    "AmsterdamZuidPokeCenter"
   ]
 }

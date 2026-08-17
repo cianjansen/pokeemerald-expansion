@@ -12,6 +12,7 @@ AmsterdamZuidHollandCasino_1F_EventScript_WinnerGiveEevee::
 	goto Common_EventScript_NoMoreRoomForPokemon
 
 AmsterdamZuidHollandCasino_1F_EventScript_GaveEevee::
+	msgbox AmsterdamZuidHollandCasino_1F_Text_ReceivedEevee, MSGBOX_DEFAULT
 	setflag FLAG_GOT_CASINO_EEVEE
 	release
 	end
@@ -49,6 +50,20 @@ AmsterdamZuidHollandCasino_1F_EventScript_GambleGamble::
 	release
 	end
 
+AmsterdamZuidHollandCasino_1F_EventScript_Patron1::
+	lock
+	faceplayer
+	msgbox AmsterdamZuidHollandCasino_1F_Text_Patron1, MSGBOX_DEFAULT
+	release
+	end
+
+AmsterdamZuidHollandCasino_1F_EventScript_Patron2::
+	lock
+	faceplayer
+	msgbox AmsterdamZuidHollandCasino_1F_Text_Patron2, MSGBOX_DEFAULT
+	release
+	end
+
 AmsterdamZuidHollandCasino_1F_EventScript_MaxBrundt::
 	trainerbattle_single TRAINER_OUDERKERK_MAX_BRUNDT, AmsterdamZuidHollandCasino_1F_Text_MaxBrundtIntro, AmsterdamZuidHollandCasino_1F_Text_MaxBrundtDefeat
 	msgbox AmsterdamZuidHollandCasino_1F_Text_MaxBrundtDefeat, MSGBOX_AUTOCLOSE
@@ -69,20 +84,29 @@ AmsterdamZuidHollandCasino_1F_EventScript_Tobias::
 	msgbox AmsterdamZuidHollandCasino_1F_Text_TobiasRepeat, MSGBOX_AUTOCLOSE
 	end
 
-@ addmoney clamps to MAX_MONEY (999,999) - the requested "1 million" isn't
-@ representable with the engine's default money cap, this is as close as
-@ it gets without widening MAX_MONEY/MAX_MONEY_DIGITS project-wide.
 AmsterdamZuidHollandCasino_1F_EventScript_TobiasPostBattle::
-	addmoney 1000000, 0
+	addmoney 999999, 0
+	setflag FLAG_TOBIAS_BEATEN
 	giveitem ITEM_TM_SHADOW_BALL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_TOBIAS_BEATEN
+	msgbox AmsterdamZuidHollandCasino_1F_Text_TobiasMatchaLatte, MSGBOX_DEFAULT
 	release
 	end
 
 AmsterdamZuidHollandCasino_1F_Text_WinnerGiveEevee:
 	.string "Ik heb kneiter dik gewonne,\n"
 	.string "hier cadeautje$"
+
+AmsterdamZuidHollandCasino_1F_Text_ReceivedEevee:
+	.string "FRITS received an EEVEE!$"
+
+AmsterdamZuidHollandCasino_1F_Text_Patron1:
+	.string "Wat heeft die Gerrie toch een\n"
+	.string "kutkop$"
+
+AmsterdamZuidHollandCasino_1F_Text_Patron2:
+	.string "Huh, ik had een perfect plan.\n"
+	.string "Hoe kon dit fout gaan?$"
 
 AmsterdamZuidHollandCasino_1F_Text_NftLoss:
 	.string "Ik heb al m'n geld vergokt aan\n"
@@ -129,3 +153,8 @@ AmsterdamZuidHollandCasino_1F_Text_TobiasDefeat:
 AmsterdamZuidHollandCasino_1F_Text_TobiasRepeat:
 	.string "TOBIAS: Ik ga chillen met\n"
 	.string "Ziyech, laters$"
+
+AmsterdamZuidHollandCasino_1F_Text_TobiasMatchaLatte:
+	.string "TOBIAS: Nu kan je sowieso\n"
+	.string "minstens een Matcha Latte met\l"
+	.string "Mango kopen$"
