@@ -1662,6 +1662,22 @@
     {
       "id": "MAPSEC_AMSTERDAM_ZUID_POKE_CENTER",
       "name": "DRUGSLAB - A'DAM ZUID"
+    },
+    {
+      "id": "MAPSEC_AMSTERDAM_ZUID_BAANDERS_HOUSE",
+      "name": "BAANDERS' VILLA"
+    },
+    {
+      "id": "MAPSEC_AMSTERDAM_ZUID_MATCHA_SHOP",
+      "name": "MATCHA SHOP"
+    },
+    {
+      "id": "MAPSEC_AMSTERDAM_ZUID_MART",
+      "name": "KRUIDVAT"
+    },
+    {
+      "id": "MAPSEC_CMROUTE2_VONDEL_PARK",
+      "name": "ROUTE 2 - VONDEL"
     }
   ]
 }

@@ -19,9 +19,9 @@
       "direction": "down"
     },
     {
-      "map": "MAP_CMROUTE1",
-      "offset": 0,
-      "direction": "down"
+      "map": "MAP_CMROUTE2VONDEL_PARK",
+      "offset": 8,
+      "direction": "up"
     }
   ],
   "object_events": [

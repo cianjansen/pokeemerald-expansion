@@ -11,8 +11,20 @@ AmsterdamZuidHollandCasino_1F_EventScript_WinnerGiveEevee::
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, AmsterdamZuidHollandCasino_1F_EventScript_GaveEevee
 	goto Common_EventScript_NoMoreRoomForPokemon
 
+@ Vaporeon/Jolteon/Flareon/Leafeon/Glaceon all evolve Eevee via a stone in
+@ this build (see SPECIES_EEVEE's .evolutions in
+@ src/data/pokemon/species_info/gen_1_families.h) - handing over all 5 here
+@ so every stone-based Eeveelution is reachable right away. Espeon/Umbreon/
+@ Sylveon evolve via friendship (+ time of day / a Fairy-type move for
+@ Sylveon) instead, so there's no item for those - normal play covers them.
 AmsterdamZuidHollandCasino_1F_EventScript_GaveEevee::
 	msgbox AmsterdamZuidHollandCasino_1F_Text_ReceivedEevee, MSGBOX_DEFAULT
+	additem ITEM_THUNDER_STONE
+	additem ITEM_WATER_STONE
+	additem ITEM_FIRE_STONE
+	additem ITEM_LEAF_STONE
+	additem ITEM_ICE_STONE
+	msgbox AmsterdamZuidHollandCasino_1F_Text_ReceivedStones, MSGBOX_DEFAULT
 	setflag FLAG_GOT_CASINO_EEVEE
 	release
 	end
@@ -99,6 +111,10 @@ AmsterdamZuidHollandCasino_1F_Text_WinnerGiveEevee:
 
 AmsterdamZuidHollandCasino_1F_Text_ReceivedEevee:
 	.string "FRITS received an EEVEE!$"
+
+AmsterdamZuidHollandCasino_1F_Text_ReceivedStones:
+	.string "FRITS also received 5\n"
+	.string "evolution stones!$"
 
 AmsterdamZuidHollandCasino_1F_Text_Patron1:
 	.string "Wat heeft die Gerrie toch een\n"
