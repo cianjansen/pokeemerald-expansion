@@ -1169,7 +1169,8 @@
     "OuderkerAmstel",
     "Ouderkerkerplas",
     "CMroute1",
-    "AmsterdamZuid"
+    "AmsterdamZuid",
+    "CMRoute2VondelPark"
   ],
   "gMapGroup_CMIndoorOuderkerk": [
     "Ouderkerk_MargrietHouse_1F_2",
@@ -1181,6 +1182,8 @@
   "gMapGroup_CMIndoorAmsterdamZuid": [
     "AmsterdamZuidHollandCasino_1F",
     "AmsterdamZuidMatchaShop",
-    "AmsterdamZuidPokeCenter"
+    "AmsterdamZuidPokeCenter",
+    "AmsterdamZuidBaandersHouse",
+    "AmsterdamZuidMart"
   ]
 }

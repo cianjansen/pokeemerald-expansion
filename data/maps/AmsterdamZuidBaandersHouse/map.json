@@ -1,0 +1,78 @@
+{
+  "id": "MAP_AMSTERDAM_ZUID_BAANDERS_HOUSE",
+  "name": "AmsterdamZuidBaandersHouse",
+  "layout": "LAYOUT_AMSTERDAM_ZUID_BAANDERS_HOUSE",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "MARK_BAANDERS",
+      "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
+      "x": 3,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AmsterdamZuidBaandersHouse_EventScript_MarkBaanders",
+      "flag": "0"
+    },
+    {
+      "local_id": "BAANDERS_MOEDER",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
+      "x": 14,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 2,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AmsterdamZuidBaandersHouse_EventScript_Moeder",
+      "flag": "0"
+    },
+    {
+      "local_id": "BAANDERS_TRAP_BLOCKER",
+      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "x": 14,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AmsterdamZuidBaandersHouse_EventScript_TrapBlocker",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_AMSTERDAM_ZUID",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_AMSTERDAM_ZUID",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

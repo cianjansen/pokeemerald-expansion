@@ -29,7 +29,7 @@
       "local_id": "MILAN_TRAJAN",
       "graphics_id": "OBJ_EVENT_GFX_NORMAN",
       "x": 4,
-      "y": 23,
+      "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -103,6 +103,20 @@
       "elevation": 0,
       "dest_map": "MAP_AMSTERDAM_ZUID_POKE_CENTER",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_AMSTERDAM_ZUID_BAANDERS_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_AMSTERDAM_ZUID_MART",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
