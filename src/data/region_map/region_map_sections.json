@@ -1678,6 +1678,10 @@
     {
       "id": "MAPSEC_CMROUTE2_VONDEL_PARK",
       "name": "ROUTE 2 - VONDEL"
+    },
+    {
+      "id": "MAPSEC_AMSTERDAM_CENTRUM",
+      "name": "AMSTERDAM CENTRUM"
     }
   ]
 }
