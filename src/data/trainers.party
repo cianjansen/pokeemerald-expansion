@@ -17217,3 +17217,63 @@ Level: 30
 - Fury Swipes
 - Fake Out
 - Detect
+
+=== TRAINER_OUDERKERK_DJOKO ===
+Name: DJOKO
+Class: Tennisser
+Pic: Running Triathlete M
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move
+
+Manectric
+Level: 28
+
+Ambipom
+Level: 30
+
+=== TRAINER_OUDERKERK_NADAL ===
+Name: NADAL
+Class: Tennisser
+Pic: Running Triathlete M
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move
+
+Kangaskhan
+Level: 30
+
+Marowak
+Level: 30
+
+=== TRAINER_OUDERKERK_FEDERER ===
+Name: FEDERER
+Class: Tennisser
+Pic: Running Triathlete M
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move
+
+Palkia
+Level: 33
+
+=== TRAINER_OUDERKERK_WOLDER ===
+Name: WOLDER
+Class: Tennisser
+Pic: Running Triathlete M
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move
+
+Voltorb
+Level: 27
+
+Electrode
+Level: 31
+
+Hitmonchan
+Level: 35
