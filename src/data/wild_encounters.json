@@ -36800,6 +36800,160 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_CMROUTE2VONDEL_PARK",
+          "base_label": "gCMRoute2VondelPark",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_PIDGEOTTO"
+              },
+              {
+                "min_level": 22,
+                "max_level": 26,
+                "species": "SPECIES_BUTTERFREE"
+              },
+              {
+                "min_level": 23,
+                "max_level": 27,
+                "species": "SPECIES_BEAUTIFLY"
+              },
+              {
+                "min_level": 23,
+                "max_level": 27,
+                "species": "SPECIES_NUZLEAF"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_IVYSAUR"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_GROVYLE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_GROTLE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_AMBIPOM"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_RAICHU"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_PACHIRISU"
+              },
+              {
+                "min_level": 27,
+                "max_level": 28,
+                "species": "SPECIES_ROSERADE"
+              },
+              {
+                "min_level": 27,
+                "max_level": 28,
+                "species": "SPECIES_SCIZOR"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 22,
+                "max_level": 27,
+                "species": "SPECIES_GOLDUCK"
+              },
+              {
+                "min_level": 22,
+                "max_level": 27,
+                "species": "SPECIES_AZUMARILL"
+              },
+              {
+                "min_level": 23,
+                "max_level": 27,
+                "species": "SPECIES_LOMBRE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_MASQUERAIN"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_QUAGSIRE"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 10,
+                "max_level": 20,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 15,
+                "max_level": 25,
+                "species": "SPECIES_GOLDEEN"
+              },
+              {
+                "min_level": 20,
+                "max_level": 28,
+                "species": "SPECIES_GOLDEEN"
+              },
+              {
+                "min_level": 20,
+                "max_level": 28,
+                "species": "SPECIES_CORPHISH"
+              },
+              {
+                "min_level": 10,
+                "max_level": 25,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 22,
+                "max_level": 28,
+                "species": "SPECIES_GOLDEEN"
+              },
+              {
+                "min_level": 22,
+                "max_level": 28,
+                "species": "SPECIES_CORPHISH"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_CORPHISH"
+              },
+              {
+                "min_level": 20,
+                "max_level": 25,
+                "species": "SPECIES_FEEBAS"
+              },
+              {
+                "min_level": 22,
+                "max_level": 28,
+                "species": "SPECIES_FEEBAS"
+              }
+            ]
+          }
         }
       ]
     },
