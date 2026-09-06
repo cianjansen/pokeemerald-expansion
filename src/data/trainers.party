@@ -17221,7 +17221,7 @@ Level: 30
 === TRAINER_OUDERKERK_DJOKO ===
 Name: DJOKO
 Class: Tennisser
-Pic: Running Triathlete M
+Pic: Tennisser
 Gender: Male
 Music: Cool
 Double Battle: No
@@ -17236,7 +17236,7 @@ Level: 30
 === TRAINER_OUDERKERK_NADAL ===
 Name: NADAL
 Class: Tennisser
-Pic: Running Triathlete M
+Pic: Tennisser
 Gender: Male
 Music: Cool
 Double Battle: No
@@ -17251,7 +17251,7 @@ Level: 30
 === TRAINER_OUDERKERK_FEDERER ===
 Name: FEDERER
 Class: Tennisser
-Pic: Running Triathlete M
+Pic: Tennisser
 Gender: Male
 Music: Cool
 Double Battle: No
@@ -17263,7 +17263,7 @@ Level: 33
 === TRAINER_OUDERKERK_WOLDER ===
 Name: WOLDER
 Class: Tennisser
-Pic: Running Triathlete M
+Pic: Tennisser
 Gender: Male
 Music: Cool
 Double Battle: No

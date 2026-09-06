@@ -181,6 +181,9 @@ const u16 gTrainerPalette_CyclingTriathleteF[] = INCGFX_U16("graphics/trainers/f
 const u32 gTrainerFrontPic_RunningTriathleteM[] = INCGFX_U32("graphics/trainers/front_pics/running_triathlete_m.png", ".4bpp.smol");
 const u16 gTrainerPalette_RunningTriathleteM[] = INCGFX_U16("graphics/trainers/front_pics/running_triathlete_m.png", ".gbapal");
 
+const u32 gTrainerFrontPic_Tennisser[] = INCGFX_U32("graphics/trainers/front_pics/tennisser.png", ".4bpp.smol");
+const u16 gTrainerPalette_Tennisser[] = INCGFX_U16("graphics/trainers/front_pics/tennisser.png", ".gbapal");
+
 const u32 gTrainerFrontPic_RunningTriathleteF[] = INCGFX_U32("graphics/trainers/front_pics/running_triathlete_f.png", ".4bpp.smol");
 const u16 gTrainerPalette_RunningTriathleteF[] = INCGFX_U16("graphics/trainers/front_pics/running_triathlete_f.png", ".gbapal");
 
@@ -873,6 +876,10 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_RUNNING_TRIATHLETE_M] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RunningTriathleteM, gTrainerPalette_RunningTriathleteM),
+    },
+    [TRAINER_PIC_TENNISSER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Tennisser, gTrainerPalette_Tennisser),
     },
     [TRAINER_PIC_RUNNING_TRIATHLETE_F] =
     {
