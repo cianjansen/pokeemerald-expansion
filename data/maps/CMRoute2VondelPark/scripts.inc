@@ -106,6 +106,48 @@ CMRoute2VondelPark_EventScript_WolderPostBattle::
 	release
 	end
 
+CMRoute2VondelPark_EventScript_Melle::
+	trainerbattle_single TRAINER_OUDERKERK_MELLE, CMRoute2VondelPark_Text_MelleIntro, CMRoute2VondelPark_Text_MelleDefeat
+	msgbox CMRoute2VondelPark_Text_MelleDefeat, MSGBOX_AUTOCLOSE
+	end
+
+CMRoute2VondelPark_EventScript_Mink::
+	trainerbattle_single TRAINER_OUDERKERK_MINK, CMRoute2VondelPark_Text_MinkIntro, CMRoute2VondelPark_Text_MinkDefeat
+	msgbox CMRoute2VondelPark_Text_MinkDefeat, MSGBOX_AUTOCLOSE
+	end
+
+CMRoute2VondelPark_EventScript_Baanders::
+	trainerbattle_single TRAINER_OUDERKERK_BAANDERS, CMRoute2VondelPark_Text_BaandersIntro, CMRoute2VondelPark_Text_BaandersDefeat
+	msgbox CMRoute2VondelPark_Text_BaandersDefeat, MSGBOX_AUTOCLOSE
+	end
+
+CMRoute2VondelPark_EventScript_Portielje::
+	trainerbattle_single TRAINER_OUDERKERK_PORTIELJE, CMRoute2VondelPark_Text_PortieljeIntro, CMRoute2VondelPark_Text_PortieljeDefeat
+	msgbox CMRoute2VondelPark_Text_PortieljeDefeat, MSGBOX_AUTOCLOSE
+	end
+
+@ Wild Celebi encounter - talks, then battles once and disappears for good
+@ regardless of outcome (win/lose/catch/flee), same pattern as vanilla
+@ FLAG_HIDE_ROUTE_12_SNORLAX: the hide flag is set on the object itself
+@ (map.json "flag") and gets set right before the battle starts, not after,
+@ so it takes effect no matter how the battle ends.
+CMRoute2VondelPark_EventScript_Celebi::
+	lock
+	faceplayer
+	msgbox CMRoute2VondelPark_Text_CelebiIntro, MSGBOX_DEFAULT
+	closemessage
+	waitse
+	playmoncry SPECIES_CELEBI, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_CELEBI, 30
+	setflag FLAG_HIDE_VONDELPARK_CELEBI
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	release
+	end
+
 CMRoute2VondelPark_Text_TrinetteTriggerShout:
 	.string "Trinette: Hey niet weggaan,\nRoland staat in de finale te\ltennissen!$"
 
@@ -148,3 +190,30 @@ CMRoute2VondelPark_Text_WolderDefeat:
 
 CMRoute2VondelPark_Text_WolderPostBattle:
 	.string "Geen vuistje voor mij vandaag.\nJe zoekt Cian? Lo weet sowieso\lwel waar hij is, die hebben nog\psamengewoond. Lo vindt je 100%\nin zijn kelder.$"
+
+CMRoute2VondelPark_Text_MelleIntro:
+	.string "Waka wierie roken op vondel$"
+
+CMRoute2VondelPark_Text_MelleDefeat:
+	.string "Huch Huch Kuch Kuch$"
+
+CMRoute2VondelPark_Text_MinkIntro:
+	.string "Als je niet jonkert kom doen,\nhoor je er niet bij$"
+
+CMRoute2VondelPark_Text_MinkDefeat:
+	.string "Ik heb stiekemen helemaal\ngeen vrienden$"
+
+CMRoute2VondelPark_Text_BaandersIntro:
+	.string "Welkom bij POW nieuws, ik ga\nvast niet kut doen$"
+
+CMRoute2VondelPark_Text_BaandersDefeat:
+	.string "Ik ben in elkaar geslagen door\nchristenen in Urk$"
+
+CMRoute2VondelPark_Text_PortieljeIntro:
+	.string "Mogen wij 450 broodjes met\nsandwich spread aub$"
+
+CMRoute2VondelPark_Text_PortieljeDefeat:
+	.string "Fuck it dan maar met 80 over\nde stoep$"
+
+CMRoute2VondelPark_Text_CelebiIntro:
+	.string "CELEBI: Ja godverdomme al die\nschoolieren zitten achter me aan\lom me op te roken na school$"

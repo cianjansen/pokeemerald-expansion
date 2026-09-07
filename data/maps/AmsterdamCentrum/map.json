@@ -20,7 +20,63 @@
     }
   ],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 31,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_AMSTERDAM_CENTRUM_POKE_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_AMSTERDAM_CENTRUM_MART",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AmsterdamCentrum_EventScript_AmsterdamCentrumSign"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AmsterdamCentrum_EventScript_FritsFamHuisSign"
+    },
+    {
+      "type": "sign",
+      "x": 23,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AmsterdamCentrum_EventScript_MelkwegSign"
+    },
+    {
+      "type": "sign",
+      "x": 32,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AmsterdamCentrum_EventScript_DrugslabSign"
+    },
+    {
+      "type": "sign",
+      "x": 44,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AmsterdamCentrum_EventScript_Rechtboomsloot47DSign"
+    }
+  ]
 }

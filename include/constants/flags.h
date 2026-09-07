@@ -64,7 +64,7 @@
 #define FLAG_MATCHA_PURCHASED    0x2A // Set once the player buys a Matcha from the AmsterdamZuidMatchaShop seller; lets them past AmsterdamZuid's Matcha Blocker checkpoint
 #define FLAG_TALKED_TO_MARK_BAANDERS    0x2B // Set after first talking to MARK_BAANDERS in AmsterdamZuidBaandersHouse; gates the one-time Quick Claw gift
 #define FLAG_VONDELPARK_BLOCKER    0x2C // Set once WOLDER is beaten in CMRoute2VondelPark; gates the two blocker triggers (Trinette/Andere Frits) and switches their repeat dialog
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
+#define FLAG_HIDE_VONDELPARK_CELEBI    0x2D // Set right before the wild Celebi battle starts in CMRoute2VondelPark (regardless of outcome); hides the CELEBI object for good, same pattern as vanilla FLAG_HIDE_ROUTE_12_SNORLAX
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag

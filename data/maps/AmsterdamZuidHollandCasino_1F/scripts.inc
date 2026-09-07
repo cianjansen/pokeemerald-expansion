@@ -140,7 +140,7 @@ AmsterdamZuidHollandCasino_1F_Text_GambleGamble:
 	.string "GAMBLE GAMBLE KUTTT$"
 
 AmsterdamZuidHollandCasino_1F_Text_MaxBrundtIntro:
-	.string "MAX BRUNDT: Ik hoe vet veel\n"
+	.string "MAX BRUNDT: Ik hou vet veel\n"
 	.string "van roelet$"
 
 AmsterdamZuidHollandCasino_1F_Text_MaxBrundtDefeat:

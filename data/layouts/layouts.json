@@ -9481,7 +9481,7 @@
     {
       "id": "LAYOUT_CMROUTE2VONDEL_PARK",
       "name": "CMRoute2VondelPark_Layout",
-      "width": 60,
+      "width": 66,
       "height": 28,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
@@ -9497,6 +9497,26 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/AmsterdamCentrum/border.bin",
       "blockdata_filepath": "data/layouts/AmsterdamCentrum/map.bin"
+    },
+    {
+      "id": "LAYOUT_AMSTERDAM_CENTRUM_POKE_CENTER",
+      "name": "AmsterdamCentrumPokeCenter_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/AmsterdamCentrumPokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/AmsterdamCentrumPokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_AMSTERDAM_CENTRUM_MART",
+      "name": "AmsterdamCentrumMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/AmsterdamCentrumMart/border.bin",
+      "blockdata_filepath": "data/layouts/AmsterdamCentrumMart/map.bin"
     }
   ]
 }

@@ -5791,6 +5791,17 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
     {
         moneyReward = 20 * gBattleResources->secretBase->party.levels[0] * gBattleStruct->moneyMultiplier;
     }
+    else if (trainerId == TRAINER_OUDERKERK_TOBIAS)
+    {
+        // [OUDERKERK HACK] Tobias already hands over a scripted 999,999-money
+        // reward on top of the normal battle-end payout (see
+        // AmsterdamZuidHollandCasino_1F_EventScript_TobiasPostBattle) -
+        // hardcode the battle-end payout itself to match so the "X got $Y for
+        // winning!" message shown right after the fight says the real number
+        // instead of the class-formula amount (GENTLEMAN money * Sableye's
+        // level = 2400).
+        moneyReward = 999999;
+    }
     else
     {
         const struct TrainerMon *party = GetTrainerPartyFromId(trainerId);

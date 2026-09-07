@@ -77,7 +77,8 @@
     "gMapGroup_IndoorSevenIslandRoute_Frlg",
     "gMapGroup_CMTowns",
     "gMapGroup_CMIndoorOuderkerk",
-    "gMapGroup_CMIndoorAmsterdamZuid"
+    "gMapGroup_CMIndoorAmsterdamZuid",
+    "gMapGroup_IndoorAmsterdamCentrum"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1186,5 +1187,9 @@
     "AmsterdamZuidPokeCenter",
     "AmsterdamZuidBaandersHouse",
     "AmsterdamZuidMart"
+  ],
+  "gMapGroup_IndoorAmsterdamCentrum": [
+    "AmsterdamCentrumPokeCenter",
+    "AmsterdamCentrumMart"
   ]
 }

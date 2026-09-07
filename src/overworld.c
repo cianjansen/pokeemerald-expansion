@@ -1962,13 +1962,15 @@ void CB2_NewGameSkipIntro(void)
 #if OUDERKERK_DEBUG_FATBIKE
     // [DEBUG/TEST TOOL] Skips the Jonas fight - start with the bikes and the
     // OuderkerAmstel bike-blocker flag already set. Also bundles in
-    // AmsterdamZuid's Matcha Blocker checkpoint (FLAG_MATCHA_PURCHASED) -
+    // AmsterdamZuid's Matcha Blocker checkpoint (FLAG_MATCHA_PURCHASED) and
+    // CMRoute2VondelPark's Wolder blocker checkpoint (FLAG_VONDELPARK_BLOCKER) -
     // same "skip the early gating checkpoints" intent, not worth a separate
     // toggle for. Build-time toggle, see spec.md's "Debug options" section.
     FlagSet(FLAG_GOT_FATBIKE);
     AddBagItem(ITEM_MACH_BIKE, 1);
     AddBagItem(ITEM_ACRO_BIKE, 1);
     FlagSet(FLAG_MATCHA_PURCHASED);
+    FlagSet(FLAG_VONDELPARK_BLOCKER);
 #endif
 #if OUDERKERK_DEBUG_IGNORE_TRAINERS
     // [DEBUG/TEST TOOL] Stops trainers from pulling the player into a battle

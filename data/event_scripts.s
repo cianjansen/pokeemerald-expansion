@@ -1772,3 +1772,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/CMRoute2VondelPark/scripts.inc"
 
 	.include "data/maps/AmsterdamCentrum/scripts.inc"
+
+	.include "data/maps/AmsterdamCentrumPokeCenter/scripts.inc"
+
+	.include "data/maps/AmsterdamCentrumMart/scripts.inc"

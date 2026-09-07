@@ -1682,6 +1682,14 @@
     {
       "id": "MAPSEC_AMSTERDAM_CENTRUM",
       "name": "AMSTERDAM CENTRUM"
+    },
+    {
+      "id": "MAPSEC_AMSTERDAM_CENTRUM_POKE_CENTER",
+      "name": "DRUGSLAB - A'DAM CENTRUM"
+    },
+    {
+      "id": "MAPSEC_AMSTERDAM_CENTRUM_MART",
+      "name": "KRUIDVAT"
     }
   ]
 }

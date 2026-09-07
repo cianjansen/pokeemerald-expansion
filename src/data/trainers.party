@@ -17270,10 +17270,67 @@ Double Battle: No
 AI: Check Bad Move
 
 Voltorb
-Level: 27
+Level: 33
 
 Electrode
-Level: 31
+Level: 35
 
 Hitmonchan
-Level: 35
+Level: 38
+
+=== TRAINER_OUDERKERK_MELLE ===
+Name: MELLE
+Class: School Kid
+Pic: School Kid M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 25
+
+Weezing
+Level: 27
+
+=== TRAINER_OUDERKERK_MINK ===
+Name: MINK
+Class: School Kid
+Pic: School Kid M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Grimer
+Level: 27
+
+Weezing
+Level: 29
+
+=== TRAINER_OUDERKERK_BAANDERS ===
+Name: BAANDERS
+Class: School Kid
+Pic: School Kid M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Grovyle
+Level: 28
+
+Monferno
+Level: 30
+
+=== TRAINER_OUDERKERK_PORTIELJE ===
+Name: PORTIELJE
+Class: Expert
+Pic: Expert M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Kabutops
+Level: 31
