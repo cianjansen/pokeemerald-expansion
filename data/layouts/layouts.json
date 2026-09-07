@@ -9547,6 +9547,36 @@
       "secondary_tileset": "gTileset_PetalburgGym",
       "border_filepath": "data/layouts/AmsterdamCentrumLoHuis/border.bin",
       "blockdata_filepath": "data/layouts/AmsterdamCentrumLoHuis/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE3HUIZEN",
+      "name": "Route3Huizen_Layout",
+      "width": 30,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Route3Huizen/border.bin",
+      "blockdata_filepath": "data/layouts/Route3Huizen/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE5MEPPEL",
+      "name": "Route5Meppel_Layout",
+      "width": 48,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route5Meppel/border.bin",
+      "blockdata_filepath": "data/layouts/Route5Meppel/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRONINGEN",
+      "name": "Groningen_Layout",
+      "width": 48,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Groningen/border.bin",
+      "blockdata_filepath": "data/layouts/Groningen/map.bin"
     }
   ]
 }

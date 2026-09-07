@@ -1172,7 +1172,10 @@
     "CMroute1",
     "AmsterdamZuid",
     "CMRoute2VondelPark",
-    "AmsterdamCentrum"
+    "AmsterdamCentrum",
+    "Route3Huizen",
+    "Route5Meppel",
+    "Groningen"
   ],
   "gMapGroup_CMIndoorOuderkerk": [
     "Ouderkerk_MargrietHouse_1F_2",
