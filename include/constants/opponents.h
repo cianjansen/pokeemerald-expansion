@@ -889,8 +889,11 @@
 #define TRAINER_OUDERKERK_MINK                873
 #define TRAINER_OUDERKERK_BAANDERS            874
 #define TRAINER_OUDERKERK_PORTIELJE           875
+#define TRAINER_ALES                          876
+#define TRAINER_MARCOS_JUAN                   877
+#define TRAINER_LO                            878
 
-#define TRAINERS_COUNT_EMERALD     876
+#define TRAINERS_COUNT_EMERALD     879
 #define MAX_TRAINERS_COUNT_EMERALD 1864
 
 #if IS_FRLG

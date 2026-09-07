@@ -9542,7 +9542,7 @@
       "id": "LAYOUT_AMSTERDAM_CENTRUM_LO_HUIS",
       "name": "AmsterdamCentrumLoHuis_Layout",
       "width": 9,
-      "height": 48,
+      "height": 34,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PetalburgGym",
       "border_filepath": "data/layouts/AmsterdamCentrumLoHuis/border.bin",

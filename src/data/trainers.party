@@ -17334,3 +17334,94 @@ AI: Check Bad Move
 
 Kabutops
 Level: 31
+
+=== TRAINER_ALES ===
+Name: ALES
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Meditite
+Hardy Nature
+Level: 38
+- Force Palm
+- Bulk Up
+- Drain Punch
+- Psych Up
+
+Machoke
+Hardy Nature
+Level: 40
+- Karate Chop
+- Bulk Up
+- Cross Chop
+- Seismic Toss
+
+=== TRAINER_MARCOS_JUAN ===
+Name: MARCOSJUAN
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Tauros
+Hardy Nature
+Level: 38
+- Take Down
+- Horn Attack
+- Rage
+- Pursuit
+
+Staraptor
+Hardy Nature
+Level: 40
+- Quick Attack
+- Wing Attack
+- Agility
+- Take Down
+
+=== TRAINER_LO ===
+Name: LO
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Gengar
+Hardy Nature
+Level: 46
+- Shadow Ball
+- Sludge Bomb
+- Hypnosis
+- Dream Eater
+
+Banette
+Hardy Nature
+Level: 47
+- Shadow Claw
+- Shadow Ball
+- Will-O-Wisp
+- Curse
+
+Mismagius
+Hardy Nature
+Level: 48
+- Shadow Ball
+- Confuse Ray
+- Power Gem
+- Perish Song
+
+Spiritomb
+Hardy Nature
+Level: 50
+- Shadow Sneak
+- Dark Pulse
+- Sucker Punch
+- Pain Split

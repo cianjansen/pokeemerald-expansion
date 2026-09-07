@@ -1690,6 +1690,14 @@
     {
       "id": "MAPSEC_AMSTERDAM_CENTRUM_MART",
       "name": "KRUIDVAT"
+    },
+    {
+      "id": "MAPSEC_AMSTERDAM_CENTRUM_LO_HUIS",
+      "name": "DE PERALTA VILLA"
+    },
+    {
+      "id": "MAPSEC_AMSTERDAM_CENTRUM_FRITS_HUIS",
+      "name": "HUIZE FRITTA"
     }
   ]
 }

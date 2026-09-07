@@ -67,7 +67,7 @@
 #define FLAG_HIDE_VONDELPARK_MEW    0x2D // Set right before the wild Mew battle starts in CMRoute2VondelPark (regardless of outcome); hides the MEW object for good, same pattern as vanilla FLAG_HIDE_ROUTE_12_SNORLAX
 #define FLAG_FRITS_MOM_MET    0x2E // Set after first meeting FRITS_MOM in AmsterdamCentrum (via her 3 approach triggers or talking to her directly); hides her outdoor object (map.json "flag"), disables the approach triggers, and is the precondition for AmsterdamCentrumFritsHuis's one-time tea-scene cutscene
 #define FLAG_FRITS_MOM_HOUSE_INTRO_DONE    0x2F // Set after the one-time "sit down for tea" cutscene plays on entering AmsterdamCentrumFritsHuis (triggered automatically once FLAG_FRITS_MOM_MET is set); gates FRITS_MOM's indoor repeat dialogue afterward
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
+#define FLAG_LO_BEATEN    0x30 // Set once the player beats LO in AmsterdamCentrumLoHuis; gates his TM Toxic hand-off and Gracia's post-Lo dialogue line
 #define FLAG_UNUSED_0x031    0x31 // Unused Flag
 #define FLAG_UNUSED_0x032    0x32 // Unused Flag
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag
