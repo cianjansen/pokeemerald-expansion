@@ -1,5 +1,22 @@
 CMRoute2VondelPark_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, CMRoute2VondelPark_OnResume
 	.byte 0
+
+@ FLAG_SYS_CTRL_OBJ_DELETE is set right before dowildbattle in
+@ CMRoute2VondelPark_EventScript_Mew and only cleared after it returns.
+@ Returning from the battle resumes the field (running this OnResume) before
+@ that clearflag line executes, so this is what actually removes Mew's
+@ sprite from the currently-loaded map - setting FLAG_HIDE_VONDELPARK_MEW
+@ alone only stops it from respawning on a future map (re)load, it doesn't
+@ retroactively hide an object already spawned this session. Same pattern
+@ as vanilla Route12_OnResume/Route12_EventScript_TryRemoveSnorlax (FRLG).
+CMRoute2VondelPark_OnResume::
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, CMRoute2VondelPark_EventScript_TryRemoveMew
+	end
+
+CMRoute2VondelPark_EventScript_TryRemoveMew::
+	removeobject VAR_LAST_TALKED
+	return
 
 @ Trinette stands just north of the vertical blocker gate (x=57, y=20-22) and
 @ is already facing down, so she's naturally facing the player as they
@@ -126,22 +143,22 @@ CMRoute2VondelPark_EventScript_Portielje::
 	msgbox CMRoute2VondelPark_Text_PortieljeDefeat, MSGBOX_AUTOCLOSE
 	end
 
-@ Wild Celebi encounter - talks, then battles once and disappears for good
+@ Wild Mew encounter - talks, then battles once and disappears for good
 @ regardless of outcome (win/lose/catch/flee), same pattern as vanilla
 @ FLAG_HIDE_ROUTE_12_SNORLAX: the hide flag is set on the object itself
 @ (map.json "flag") and gets set right before the battle starts, not after,
 @ so it takes effect no matter how the battle ends.
-CMRoute2VondelPark_EventScript_Celebi::
+CMRoute2VondelPark_EventScript_Mew::
 	lock
 	faceplayer
-	msgbox CMRoute2VondelPark_Text_CelebiIntro, MSGBOX_DEFAULT
+	msgbox CMRoute2VondelPark_Text_MewIntro, MSGBOX_DEFAULT
 	closemessage
 	waitse
-	playmoncry SPECIES_CELEBI, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_MEW, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_CELEBI, 30
-	setflag FLAG_HIDE_VONDELPARK_CELEBI
+	setwildbattle SPECIES_MEW, 30
+	setflag FLAG_HIDE_VONDELPARK_MEW
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -215,5 +232,5 @@ CMRoute2VondelPark_Text_PortieljeIntro:
 CMRoute2VondelPark_Text_PortieljeDefeat:
 	.string "Fuck it dan maar met 80 over\nde stoep$"
 
-CMRoute2VondelPark_Text_CelebiIntro:
-	.string "CELEBI: Ja godverdomme al die\nschoolieren zitten achter me aan\lom me op te roken na school$"
+CMRoute2VondelPark_Text_MewIntro:
+	.string "Miauw Miauw, ik ben Xiuxia.\nZonder hoesje kom je niet in\lmijn poesje$"

@@ -64,9 +64,9 @@
 #define FLAG_MATCHA_PURCHASED    0x2A // Set once the player buys a Matcha from the AmsterdamZuidMatchaShop seller; lets them past AmsterdamZuid's Matcha Blocker checkpoint
 #define FLAG_TALKED_TO_MARK_BAANDERS    0x2B // Set after first talking to MARK_BAANDERS in AmsterdamZuidBaandersHouse; gates the one-time Quick Claw gift
 #define FLAG_VONDELPARK_BLOCKER    0x2C // Set once WOLDER is beaten in CMRoute2VondelPark; gates the two blocker triggers (Trinette/Andere Frits) and switches their repeat dialog
-#define FLAG_HIDE_VONDELPARK_CELEBI    0x2D // Set right before the wild Celebi battle starts in CMRoute2VondelPark (regardless of outcome); hides the CELEBI object for good, same pattern as vanilla FLAG_HIDE_ROUTE_12_SNORLAX
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
+#define FLAG_HIDE_VONDELPARK_MEW    0x2D // Set right before the wild Mew battle starts in CMRoute2VondelPark (regardless of outcome); hides the MEW object for good, same pattern as vanilla FLAG_HIDE_ROUTE_12_SNORLAX
+#define FLAG_FRITS_MOM_MET    0x2E // Set after first meeting FRITS_MOM in AmsterdamCentrum (via her 3 approach triggers or talking to her directly); hides her outdoor object (map.json "flag"), disables the approach triggers, and is the precondition for AmsterdamCentrumFritsHuis's one-time tea-scene cutscene
+#define FLAG_FRITS_MOM_HOUSE_INTRO_DONE    0x2F // Set after the one-time "sit down for tea" cutscene plays on entering AmsterdamCentrumFritsHuis (triggered automatically once FLAG_FRITS_MOM_MET is set); gates FRITS_MOM's indoor repeat dialogue afterward
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag
 #define FLAG_UNUSED_0x031    0x31 // Unused Flag
 #define FLAG_UNUSED_0x032    0x32 // Unused Flag

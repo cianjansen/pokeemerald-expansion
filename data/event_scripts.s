@@ -1776,3 +1776,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/AmsterdamCentrumPokeCenter/scripts.inc"
 
 	.include "data/maps/AmsterdamCentrumMart/scripts.inc"
+
+	.include "data/maps/AmsterdamCentrumFritsHuis/scripts.inc"
+
+	.include "data/maps/AmsterdamCentrumFritsHuis_2F/scripts.inc"
+
+	.include "data/maps/AmsterdamCentrumLoHuis/scripts.inc"

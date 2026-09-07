@@ -9517,6 +9517,36 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/AmsterdamCentrumMart/border.bin",
       "blockdata_filepath": "data/layouts/AmsterdamCentrumMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_AMSTERDAM_CENTRUM_FRITS_HUIS",
+      "name": "AmsterdamCentrumFritsHuis_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MysteryEventsHouse",
+      "border_filepath": "data/layouts/AmsterdamCentrumFritsHuis/border.bin",
+      "blockdata_filepath": "data/layouts/AmsterdamCentrumFritsHuis/map.bin"
+    },
+    {
+      "id": "LAYOUT_AMSTERDAM_CENTRUM_FRITS_HUIS_2F",
+      "name": "AmsterdamCentrumFritsHuis_2F_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/AmsterdamCentrumFritsHuis_2F/border.bin",
+      "blockdata_filepath": "data/layouts/AmsterdamCentrumFritsHuis_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_AMSTERDAM_CENTRUM_LO_HUIS",
+      "name": "AmsterdamCentrumLoHuis_Layout",
+      "width": 9,
+      "height": 48,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PetalburgGym",
+      "border_filepath": "data/layouts/AmsterdamCentrumLoHuis/border.bin",
+      "blockdata_filepath": "data/layouts/AmsterdamCentrumLoHuis/map.bin"
     }
   ]
 }

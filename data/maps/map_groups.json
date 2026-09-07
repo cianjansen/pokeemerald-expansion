@@ -1190,6 +1190,9 @@
   ],
   "gMapGroup_IndoorAmsterdamCentrum": [
     "AmsterdamCentrumPokeCenter",
-    "AmsterdamCentrumMart"
+    "AmsterdamCentrumMart",
+    "AmsterdamCentrumFritsHuis",
+    "AmsterdamCentrumFritsHuis_2F",
+    "AmsterdamCentrumLoHuis"
   ]
 }
