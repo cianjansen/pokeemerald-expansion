@@ -53,6 +53,45 @@ AmsterdamCentrum_Text_FritsMomGreeting:
 	.string "binnen dan maak ik een kopje\l"
 	.string "thee voor je.$"
 
+@ Shared entry point for LO_COWORKER's own "talk" script AND both approach
+@ triggers north of him (55,21-22) - same as AmsterdamCentrum_EventScript_
+@ FritsMom above: only gated by FLAG_LO_BEATEN rather than by a per-object
+@ "flag" hiding him afterward, since he stays on the map either way. Once
+@ Lo's beaten, goto_if_set below routes to the Inactive line instead - just
+@ a plain msgbox, no forced player movement, since there's nothing left to
+@ urgently check on.
+AmsterdamCentrum_EventScript_PwcGuy::
+	goto_if_set FLAG_LO_BEATEN, AmsterdamCentrum_EventScript_PwcGuyInactive
+	lockall
+	msgbox AmsterdamCentrum_Text_PwcGuyCheckOnLo, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_PLAYER, AmsterdamCentrum_Movement_PlayerPushedWest
+	waitmovement 0
+	releaseall
+	end
+
+AmsterdamCentrum_EventScript_PwcGuyInactive::
+	lockall
+	msgbox AmsterdamCentrum_Text_PwcGuyNewHandle, MSGBOX_DEFAULT
+	releaseall
+	end
+
+AmsterdamCentrum_Movement_PlayerPushedWest:
+	lock_facing_direction
+	walk_left
+	unlock_facing_direction
+	step_end
+
+AmsterdamCentrum_Text_PwcGuyCheckOnLo:
+	.string "PWC GUY: Ja godverdomme, die LO\n"
+	.string "vent heeft z'n werk helemaal niet\l"
+	.string "af. Zit ie weer anime te kijken\l"
+	.string "ofzo? Beter ga je even checken$"
+
+AmsterdamCentrum_Text_PwcGuyNewHandle:
+	.string "PWC GUY: Yoo nieuwe handle just\n"
+	.string "dropped$"
+
 AmsterdamCentrum_EventScript_AmsterdamCentrumSign::
 	msgbox AmsterdamCentrum_Text_AmsterdamCentrumSign, MSGBOX_SIGN
 	end
