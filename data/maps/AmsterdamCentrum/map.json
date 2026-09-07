@@ -17,6 +17,11 @@
       "map": "MAP_CMROUTE2VONDEL_PARK",
       "offset": 0,
       "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE3HUIZEN",
+      "offset": -58,
+      "direction": "right"
     }
   ],
   "object_events": [

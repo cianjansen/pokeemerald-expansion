@@ -27,6 +27,11 @@
       "map": "MAP_GRONINGEN",
       "offset": 0,
       "direction": "up"
+    },
+    {
+      "map": "MAP_AMSTERDAM_CENTRUM",
+      "offset": 58,
+      "direction": "left"
     }
   ],
   "object_events": [],
