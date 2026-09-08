@@ -17425,3 +17425,156 @@ Level: 50
 - Dark Pulse
 - Sucker Punch
 - Pain Split
+
+=== TRAINER_OUDERKERK_HENK ===
+Name: HENK
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Gyarados
+Level: 48
+
+Whiscash
+Level: 47
+
+Seaking
+Level: 46
+
+=== TRAINER_OUDERKERK_GERARD ===
+Name: GERARD
+Class: Pokefan
+Pic: Pokefan M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Snorlax
+Level: 49
+
+Exploud
+Level: 48
+
+Torkoal
+Level: 47
+
+=== TRAINER_OUDERKERK_TIM ===
+Name: TIM
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Butterfree
+Level: 47
+
+Beedrill
+Level: 47
+
+Dustox
+Level: 48
+
+Beautifly
+Level: 48
+
+=== TRAINER_OUDERKERK_BRAM ===
+Name: BRAM
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Golem
+Level: 50
+
+Machamp
+Level: 48
+
+Donphan
+Level: 49
+
+=== TRAINER_OUDERKERK_KEVIN ===
+Name: KEVIN
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Sharpedo
+Level: 51
+
+Manectric
+Level: 50
+
+Mightyena
+Level: 49
+
+=== TRAINER_OUDERKERK_SANNE ===
+Name: SANNE
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Milotic
+Level: 52
+
+Gorebyss
+Level: 51
+
+Roserade
+Level: 51
+
+=== TRAINER_OUDERKERK_SEM ===
+Name: SEM
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Heracross
+Level: 53
+
+Scizor
+Level: 52
+
+Vespiquen
+Level: 52
+
+=== TRAINER_OUDERKERK_MAX ===
+Name: MAX
+Class: Cooltrainer
+Pic: Red
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move
+
+Sceptile
+Level: 54
+
+Alakazam
+Level: 54
+
+Lopunny
+Level: 53
+
+Crobat
+Level: 54
+
+Staraptor
+Level: 55

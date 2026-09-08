@@ -36954,6 +36954,130 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ROUTE3HUIZEN",
+          "base_label": "gRoute3Huizen",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 40,
+                "max_level": 43,
+                "species": "SPECIES_MACHAMP"
+              },
+              {
+                "min_level": 40,
+                "max_level": 43,
+                "species": "SPECIES_XATU"
+              },
+              {
+                "min_level": 40,
+                "max_level": 43,
+                "species": "SPECIES_BRELOOM"
+              },
+              {
+                "min_level": 40,
+                "max_level": 43,
+                "species": "SPECIES_DONPHAN"
+              },
+              {
+                "min_level": 41,
+                "max_level": 44,
+                "species": "SPECIES_MEDICHAM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 44,
+                "species": "SPECIES_HERACROSS"
+              },
+              {
+                "min_level": 42,
+                "max_level": 45,
+                "species": "SPECIES_ALAKAZAM"
+              },
+              {
+                "min_level": 42,
+                "max_level": 45,
+                "species": "SPECIES_GABITE"
+              },
+              {
+                "min_level": 42,
+                "max_level": 45,
+                "species": "SPECIES_GLISCOR"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_ALTARIA"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_SHELGON"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_ABSOL"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 10,
+                "max_level": 25,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 10,
+                "max_level": 25,
+                "species": "SPECIES_BARBOACH"
+              },
+              {
+                "min_level": 20,
+                "max_level": 35,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 25,
+                "max_level": 35,
+                "species": "SPECIES_GOLDEEN"
+              },
+              {
+                "min_level": 25,
+                "max_level": 35,
+                "species": "SPECIES_BARBOACH"
+              },
+              {
+                "min_level": 35,
+                "max_level": 45,
+                "species": "SPECIES_WHISCASH"
+              },
+              {
+                "min_level": 35,
+                "max_level": 45,
+                "species": "SPECIES_SEAKING"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_BARBOACH"
+              },
+              {
+                "min_level": 35,
+                "max_level": 42,
+                "species": "SPECIES_DRATINI"
+              },
+              {
+                "min_level": 40,
+                "max_level": 45,
+                "species": "SPECIES_DRAGONAIR"
+              }
+            ]
+          }
         }
       ]
     },

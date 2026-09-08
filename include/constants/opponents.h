@@ -893,7 +893,17 @@
 #define TRAINER_MARCOS_JUAN                   877
 #define TRAINER_LO                            878
 
-#define TRAINERS_COUNT_EMERALD     879
+// Route3Huizen trainers (fight order = definition order)
+#define TRAINER_OUDERKERK_HENK               879
+#define TRAINER_OUDERKERK_GERARD             880
+#define TRAINER_OUDERKERK_TIM                881
+#define TRAINER_OUDERKERK_BRAM               882
+#define TRAINER_OUDERKERK_KEVIN              883
+#define TRAINER_OUDERKERK_SANNE              884
+#define TRAINER_OUDERKERK_SEM                885
+#define TRAINER_OUDERKERK_MAX                886
+
+#define TRAINERS_COUNT_EMERALD     887
 #define MAX_TRAINERS_COUNT_EMERALD 1864
 
 #if IS_FRLG
