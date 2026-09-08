@@ -9491,7 +9491,7 @@
     {
       "id": "LAYOUT_AMSTERDAM_CENTRUM",
       "name": "AmsterdamCentrum_Layout",
-      "width": 60,
+      "width": 68,
       "height": 42,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
@@ -9562,9 +9562,9 @@
       "id": "LAYOUT_ROUTE5MEPPEL",
       "name": "Route5Meppel_Layout",
       "width": 48,
-      "height": 40,
+      "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route5Meppel/border.bin",
       "blockdata_filepath": "data/layouts/Route5Meppel/map.bin"
     },
