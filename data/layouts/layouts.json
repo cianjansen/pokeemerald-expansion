@@ -9577,6 +9577,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Groningen/border.bin",
       "blockdata_filepath": "data/layouts/Groningen/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE3GEN_HUIS",
+      "name": "Route3GenHuis_Layout",
+      "width": 24,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route3GenHuis/border.bin",
+      "blockdata_filepath": "data/layouts/Route3GenHuis/map.bin"
     }
   ]
 }

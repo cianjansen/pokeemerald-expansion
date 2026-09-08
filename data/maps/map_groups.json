@@ -78,7 +78,8 @@
     "gMapGroup_CMTowns",
     "gMapGroup_CMIndoorOuderkerk",
     "gMapGroup_CMIndoorAmsterdamZuid",
-    "gMapGroup_IndoorAmsterdamCentrum"
+    "gMapGroup_IndoorAmsterdamCentrum",
+    "gMapGroup_CMIndoorRoute3"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1197,5 +1198,8 @@
     "AmsterdamCentrumFritsHuis",
     "AmsterdamCentrumFritsHuis_2F",
     "AmsterdamCentrumLoHuis"
+  ],
+  "gMapGroup_CMIndoorRoute3": [
+    "Route3GenHuis"
   ]
 }

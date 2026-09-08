@@ -57,7 +57,7 @@
 #define FLAG_GOT_FATBIKE 0x23 // Set once the player has a bike; lets them past the Ouderkerk_FietsBlokker roadblock north of town
 #define FLAG_TALKED_TO_FIETS_BLOKKER 0x24 // Set after first talking to Ouderkerk_FietsBlokker
 #define FLAG_TALKED_TO_ANTON 0x25 // Set after first talking to Anton (Mr. Fuji) in Ouderker_CasHouse_1F; gates the one-time Super Potion gift
-#define FLAG_DEBUG_GOT_BLAZIKEN    0x26 // [DEBUG/TEST TOOL] Set once the OUDERKERK_DEBUG_BLAZIKEN build-time debug Lv.100 BLAZIKEN has been granted, so it's only given once
+#define FLAG_DEBUG_GOT_RAYQUAZA    0x26 // [DEBUG/TEST TOOL] Set once the OUDERKERK_DEBUG_RAYQUAZA build-time debug Lv.100 RAYQUAZA has been granted, so it's only given once
 #define FLAG_GOT_CASINO_EEVEE 0x27 // Set once the player receives the free Eevee gift from the winning gambler NPC in AmsterdamZuidHollandCasino_1F
 #define FLAG_TOBIAS_BEATEN    0x28 // Set once the player beats TOBIAS in AmsterdamZuidHollandCasino_1F; gates the one-time 999,999-money + TM Shadow Ball reward
 #define FLAG_DEBUG_NO_TRAINER_SEE    0x29 // [DEBUG/TEST TOOL] Wired to OW_FLAG_NO_TRAINER_SEE (config/overworld.h) - set at New Game when OUDERKERK_DEBUG_IGNORE_TRAINERS=1, stops trainers from pulling the player into a battle on sight (can still be talked to on purpose)
@@ -68,8 +68,8 @@
 #define FLAG_FRITS_MOM_MET    0x2E // Set after first meeting FRITS_MOM in AmsterdamCentrum (via her 3 approach triggers or talking to her directly); hides her outdoor object (map.json "flag"), disables the approach triggers, and is the precondition for AmsterdamCentrumFritsHuis's one-time tea-scene cutscene
 #define FLAG_FRITS_MOM_HOUSE_INTRO_DONE    0x2F // Set after the one-time "sit down for tea" cutscene plays on entering AmsterdamCentrumFritsHuis (triggered automatically once FLAG_FRITS_MOM_MET is set); gates FRITS_MOM's indoor repeat dialogue afterward
 #define FLAG_LO_BEATEN    0x30 // Set once the player beats LO in AmsterdamCentrumLoHuis; gates his TM Toxic hand-off and Gracia's post-Lo dialogue line
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
+#define FLAG_GOT_LEFTOVER_GIVER_GIFT    0x31 // Set after first talking to LEFTOVER_GIVER in AmsterdamCentrum; gates the one-time 6x Leftovers gift and switches her to the "burnt toast" repeat line
+#define FLAG_HIDE_ROUTE3HUIZEN_KYOGRE    0x32 // Set right before the wild Kyogre battle starts on Route3Huizen (regardless of outcome); hides the KYOGRE_ENCOUNTER object for good, same pattern as FLAG_HIDE_VONDELPARK_MEW
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag

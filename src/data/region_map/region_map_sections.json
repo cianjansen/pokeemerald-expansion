@@ -1698,6 +1698,14 @@
     {
       "id": "MAPSEC_AMSTERDAM_CENTRUM_FRITS_HUIS",
       "name": "HUIZE FRITTA"
+    },
+    {
+      "id": "MAPSEC_ROUTE3HUIZEN",
+      "name": "ROUTE 2 - AMS - GRO"
+    },
+    {
+      "id": "MAPSEC_ROUTE3GEN_HUIS",
+      "name": "HUIZE GEN"
     }
   ]
 }

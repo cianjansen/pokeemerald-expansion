@@ -53,13 +53,13 @@ AmsterdamCentrum_Text_FritsMomGreeting:
 	.string "binnen dan maak ik een kopje\l"
 	.string "thee voor je.$"
 
-@ Shared entry point for LO_COWORKER's own "talk" script AND both approach
-@ triggers north of him (55,21-22) - same as AmsterdamCentrum_EventScript_
-@ FritsMom above: only gated by FLAG_LO_BEATEN rather than by a per-object
-@ "flag" hiding him afterward, since he stays on the map either way. Once
-@ Lo's beaten, goto_if_set below routes to the Inactive line instead - just
-@ a plain msgbox, no forced player movement, since there's nothing left to
-@ urgently check on.
+@ LO_COWORKER's own "talk" script. Gated by FLAG_LO_BEATEN rather than by a
+@ per-object "flag" hiding him afterward, since he stays on the map either
+@ way. Once Lo's beaten, goto_if_set below routes to the Inactive line
+@ instead - just a plain msgbox, no forced player movement, since there's
+@ nothing left to urgently check on. Talking to him directly still shows
+@ this line post-flag; see PwcGuyApproach below for the walk-up triggers,
+@ which go fully inert instead.
 AmsterdamCentrum_EventScript_PwcGuy::
 	goto_if_set FLAG_LO_BEATEN, AmsterdamCentrum_EventScript_PwcGuyInactive
 	lockall
@@ -74,6 +74,24 @@ AmsterdamCentrum_EventScript_PwcGuyInactive::
 	lockall
 	msgbox AmsterdamCentrum_Text_PwcGuyNewHandle, MSGBOX_DEFAULT
 	releaseall
+	end
+
+@ Entry point for the two approach triggers north of LO_COWORKER (55,21-22).
+@ Same "check on Lo" behavior as AmsterdamCentrum_EventScript_PwcGuy while
+@ FLAG_LO_BEATEN is unset. Once it's set, this goes fully inert - just
+@ walking past him should do nothing, unlike talking to him directly (which
+@ still shows the "nieuwe handle" line via PwcGuyInactive above).
+AmsterdamCentrum_EventScript_PwcGuyApproach::
+	goto_if_set FLAG_LO_BEATEN, AmsterdamCentrum_EventScript_PwcGuyApproachInactive
+	lockall
+	msgbox AmsterdamCentrum_Text_PwcGuyCheckOnLo, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_PLAYER, AmsterdamCentrum_Movement_PlayerPushedWest
+	waitmovement 0
+	releaseall
+	end
+
+AmsterdamCentrum_EventScript_PwcGuyApproachInactive::
 	end
 
 AmsterdamCentrum_Movement_PlayerPushedWest:
@@ -91,6 +109,55 @@ AmsterdamCentrum_Text_PwcGuyCheckOnLo:
 AmsterdamCentrum_Text_PwcGuyNewHandle:
 	.string "PWC GUY: Yoo nieuwe handle just\n"
 	.string "dropped$"
+
+AmsterdamCentrum_EventScript_MacumbaEnjoyer::
+	lock
+	faceplayer
+	msgbox AmsterdamCentrum_Text_MacumbaEnjoyer, MSGBOX_DEFAULT
+	release
+	end
+
+AmsterdamCentrum_Text_MacumbaEnjoyer:
+	.string "MACUMBA ENJOYER: Me gustan las\n"
+	.string "nalgas grandotas de las\l"
+	.string "Colombiana's$"
+
+AmsterdamCentrum_EventScript_BernhardJunior::
+	lock
+	faceplayer
+	msgbox AmsterdamCentrum_Text_BernhardJunior, MSGBOX_DEFAULT
+	release
+	end
+
+AmsterdamCentrum_Text_BernhardJunior:
+	.string "BERNHARD JUNIOR: Ik heb 6000\n"
+	.string "pandjes, voor maar 2200 de\l"
+	.string "maand exclusief mag je komen\p"
+	.string "wonen in Osdorp$"
+
+@ First talk: flavor line + one-time 6x Leftovers gift, gated by
+@ FLAG_GOT_LEFTOVER_GIVER_GIFT. Every talk after: the "burnt toast" line.
+AmsterdamCentrum_EventScript_LeftoverGiver::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_LEFTOVER_GIVER_GIFT, AmsterdamCentrum_EventScript_LeftoverGiverRepeat
+	msgbox AmsterdamCentrum_Text_LeftoverGiverFirst, MSGBOX_DEFAULT
+	giveitem ITEM_LEFTOVERS, 6
+	setflag FLAG_GOT_LEFTOVER_GIVER_GIFT
+	release
+	end
+
+AmsterdamCentrum_EventScript_LeftoverGiverRepeat::
+	msgbox AmsterdamCentrum_Text_LeftoverGiverRepeat, MSGBOX_DEFAULT
+	release
+	end
+
+AmsterdamCentrum_Text_LeftoverGiverFirst:
+	.string "Yo ik ga sws bijna dood, hier\n"
+	.string "heb je wat ouwe meuk van me$"
+
+AmsterdamCentrum_Text_LeftoverGiverRepeat:
+	.string "Ruik jij ook verbrande toast?$"
 
 AmsterdamCentrum_EventScript_AmsterdamCentrumSign::
 	msgbox AmsterdamCentrum_Text_AmsterdamCentrumSign, MSGBOX_SIGN

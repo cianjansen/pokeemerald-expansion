@@ -17427,7 +17427,7 @@ Level: 50
 - Pain Split
 
 === TRAINER_OUDERKERK_HENK ===
-Name: HENK
+Name: FREEK VONK
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -17463,7 +17463,7 @@ Torkoal
 Level: 47
 
 === TRAINER_OUDERKERK_TIM ===
-Name: TIM
+Name: JOCH
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -17471,20 +17471,17 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Butterfree
+Dewgong
 Level: 47
 
-Beedrill
+Glalie
 Level: 47
 
-Dustox
-Level: 48
-
-Beautifly
+Abomasnow
 Level: 48
 
 === TRAINER_OUDERKERK_BRAM ===
-Name: BRAM
+Name: LAU
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -17520,7 +17517,7 @@ Mightyena
 Level: 49
 
 === TRAINER_OUDERKERK_SANNE ===
-Name: SANNE
+Name: FAM LOUISE
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -17536,24 +17533,6 @@ Level: 51
 
 Roserade
 Level: 51
-
-=== TRAINER_OUDERKERK_SEM ===
-Name: SEM
-Class: Bug Catcher
-Pic: Bug Catcher
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Heracross
-Level: 53
-
-Scizor
-Level: 52
-
-Vespiquen
-Level: 52
 
 === TRAINER_OUDERKERK_MAX ===
 Name: MAX

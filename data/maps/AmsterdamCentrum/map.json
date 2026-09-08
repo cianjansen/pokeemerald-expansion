@@ -54,29 +54,31 @@
       "flag": "0"
     },
     {
+      "local_id": "LEFTOVER_GIVER",
       "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
-      "x": 60,
-      "y": 9,
+      "x": 62,
+      "y": 13,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AmsterdamCentrum_EventScript_LeftoverGiver",
       "flag": "0"
     },
     {
+      "local_id": "PRINS_BERNHARD_JUNIOR",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
       "x": 38,
       "y": 26,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AmsterdamCentrum_EventScript_BernhardJunior",
       "flag": "0"
     },
     {
@@ -93,22 +95,23 @@
       "flag": "0"
     },
     {
+      "local_id": "MACUMBA_EJOYER",
       "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
       "x": 25,
       "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AmsterdamCentrum_EventScript_MacumbaEnjoyer",
       "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 31,
+      "x": 29,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_AMSTERDAM_CENTRUM_POKE_CENTER",
@@ -171,7 +174,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "AmsterdamCentrum_EventScript_PwcGuy"
+      "script": "AmsterdamCentrum_EventScript_PwcGuyApproach"
     },
     {
       "type": "trigger",
@@ -180,7 +183,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "AmsterdamCentrum_EventScript_PwcGuy"
+      "script": "AmsterdamCentrum_EventScript_PwcGuyApproach"
     }
   ],
   "bg_events": [

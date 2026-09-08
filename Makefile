@@ -159,25 +159,25 @@ endif
 # Ouderkerk debug/testing toggles - on (1) by default, so a plain build/reload
 # always has the debug tools available; build with e.g.
 # `make OUDERKERK_DEBUG_FATBIKE=0` (or `./reload OUDERKERK_DEBUG_FATBIKE=0
-# OUDERKERK_DEBUG_BLAZIKEN=0`) to turn a given one off instead. See spec.md's
+# OUDERKERK_DEBUG_RAYQUAZA=0`) to turn a given one off instead. See spec.md's
 # "Debug options" section for what each one does.
 OUDERKERK_DEBUG_FATBIKE ?= 1
-OUDERKERK_DEBUG_BLAZIKEN ?= 1
+OUDERKERK_DEBUG_RAYQUAZA ?= 1
 OUDERKERK_DEBUG_IGNORE_TRAINERS ?= 1
-CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=1 -DTESTING=$(TEST) -D$(GAME_VERSION) -std=gnu17 -DOUDERKERK_DEBUG_FATBIKE=$(OUDERKERK_DEBUG_FATBIKE) -DOUDERKERK_DEBUG_BLAZIKEN=$(OUDERKERK_DEBUG_BLAZIKEN) -DOUDERKERK_DEBUG_IGNORE_TRAINERS=$(OUDERKERK_DEBUG_IGNORE_TRAINERS)
+CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=1 -DTESTING=$(TEST) -D$(GAME_VERSION) -std=gnu17 -DOUDERKERK_DEBUG_FATBIKE=$(OUDERKERK_DEBUG_FATBIKE) -DOUDERKERK_DEBUG_RAYQUAZA=$(OUDERKERK_DEBUG_RAYQUAZA) -DOUDERKERK_DEBUG_IGNORE_TRAINERS=$(OUDERKERK_DEBUG_IGNORE_TRAINERS)
 
 # make has no idea that changing an OUDERKERK_DEBUG_* value changes CPPFLAGS, so
-# `make OUDERKERK_DEBUG_BLAZIKEN=0` on its own would just relink the stale
+# `make OUDERKERK_DEBUG_RAYQUAZA=0` on its own would just relink the stale
 # debug-on objects and silently do nothing (bit us repeatedly - see spec.md).
 # Fix: stamp the current toggle values into a sentinel file, rewritten only
 # when they actually change (so its mtime moves only on a real change), and
 # make every object that reads an OUDERKERK_DEBUG_* macro depend on it.
 # >>> If you add a new `#if OUDERKERK_DEBUG_*` site, add its .o to the list below. <<<
-OUDERKERK_DEBUG_STAMP := $(OUDERKERK_DEBUG_FATBIKE)$(OUDERKERK_DEBUG_BLAZIKEN)$(OUDERKERK_DEBUG_IGNORE_TRAINERS)
+OUDERKERK_DEBUG_STAMP := $(OUDERKERK_DEBUG_FATBIKE)$(OUDERKERK_DEBUG_RAYQUAZA)$(OUDERKERK_DEBUG_IGNORE_TRAINERS)
 OUDERKERK_DEBUG_SENTINEL := $(OBJ_DIR)/ouderkerk_debug_flags
 $(shell mkdir -p $(OBJ_DIR); [ "$$(cat $(OUDERKERK_DEBUG_SENTINEL) 2>/dev/null)" = "$(OUDERKERK_DEBUG_STAMP)" ] || echo "$(OUDERKERK_DEBUG_STAMP)" > $(OUDERKERK_DEBUG_SENTINEL))
 $(C_BUILDDIR)/overworld.o: $(OUDERKERK_DEBUG_SENTINEL)          # OUDERKERK_DEBUG_FATBIKE, OUDERKERK_DEBUG_IGNORE_TRAINERS
-$(DATA_ASM_BUILDDIR)/event_scripts.o: $(OUDERKERK_DEBUG_SENTINEL) # OUDERKERK_DEBUG_BLAZIKEN (Ouderkerk_MargrietHouse_2F/scripts.inc)
+$(DATA_ASM_BUILDDIR)/event_scripts.o: $(OUDERKERK_DEBUG_SENTINEL) # OUDERKERK_DEBUG_RAYQUAZA (Ouderkerk_MargrietHouse_2F/scripts.inc)
 ifeq ($(RELEASE),1)
 	override CPPFLAGS += -DRELEASE
 	ifeq ($(USE_LTO_ON_RELEASE),1)

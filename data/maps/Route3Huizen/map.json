@@ -3,7 +3,7 @@
   "name": "Route3Huizen",
   "layout": "LAYOUT_ROUTE3HUIZEN",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_ROUTE3HUIZEN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -67,9 +67,9 @@
       "local_id": "TIM",
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
       "x": 24,
-      "y": 69,
+      "y": 71,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -79,7 +79,7 @@
     },
     {
       "local_id": "BRAM",
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
       "x": 16,
       "y": 54,
       "elevation": 0,
@@ -117,20 +117,6 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route3Huizen_EventScript_Sanne",
-      "flag": "0"
-    },
-    {
-      "local_id": "SEM",
-      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 21,
-      "y": 5,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
-      "script": "Route3Huizen_EventScript_Sem",
       "flag": "0"
     },
     {
@@ -172,9 +158,75 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "local_id": "ROUTE_3_HEALER_1",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 25,
+      "y": 62,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Common_EventScript_Healer",
+      "flag": "0"
+    },
+    {
+      "local_id": "ROUTE_3_HEALER_2",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 23,
+      "y": 14,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Common_EventScript_Healer",
+      "flag": "0"
+    },
+    {
+      "local_id": "KYOGRE_ENCOUNTER",
+      "graphics_id": "OBJ_EVENT_GFX_KYOGRE_FRONT",
+      "x": 8,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route3Huizen_EventScript_Kyogre",
+      "flag": "FLAG_HIDE_ROUTE3HUIZEN_KYOGRE"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE3GEN_HUIS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE3HUIZEN",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 36,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route3Huizen_EventScript_HuizenSign"
+    }
+  ]
 }

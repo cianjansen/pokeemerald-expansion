@@ -1967,9 +1967,11 @@ void CB2_NewGameSkipIntro(void)
     // and AmsterdamCentrum's Frits Mom arc (FLAG_FRITS_MOM_MET +
     // FLAG_FRITS_MOM_HOUSE_INTRO_DONE - hides her outdoor object, no-ops her
     // 3 approach triggers, and skips the one-time tea-scene cutscene in
-    // AmsterdamCentrumFritsHuis) - same "skip the early gating checkpoints"
-    // intent, not worth a separate toggle for. Build-time toggle, see
-    // spec.md's "Debug options" section.
+    // AmsterdamCentrumFritsHuis), and AmsterdamCentrum's Lo checkpoint
+    // (FLAG_LO_BEATEN - no-ops PWC Guy's "check on Lo" push-back, both via
+    // direct talk and the 2 approach triggers) - same "skip the early
+    // gating checkpoints" intent, not worth a separate toggle for.
+    // Build-time toggle, see spec.md's "Debug options" section.
     FlagSet(FLAG_GOT_FATBIKE);
     AddBagItem(ITEM_MACH_BIKE, 1);
     AddBagItem(ITEM_ACRO_BIKE, 1);
@@ -1977,6 +1979,7 @@ void CB2_NewGameSkipIntro(void)
     FlagSet(FLAG_VONDELPARK_BLOCKER);
     FlagSet(FLAG_FRITS_MOM_MET);
     FlagSet(FLAG_FRITS_MOM_HOUSE_INTRO_DONE);
+    FlagSet(FLAG_LO_BEATEN);
 #endif
 #if OUDERKERK_DEBUG_IGNORE_TRAINERS
     // [DEBUG/TEST TOOL] Stops trainers from pulling the player into a battle
