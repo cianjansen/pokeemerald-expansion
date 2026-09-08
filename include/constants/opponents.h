@@ -902,7 +902,10 @@
 #define TRAINER_OUDERKERK_SANNE              884
 #define TRAINER_OUDERKERK_MAX                885
 
-#define TRAINERS_COUNT_EMERALD     886
+// Route3GenHuis trainers
+#define TRAINER_OUDERKERK_GEN                886
+
+#define TRAINERS_COUNT_EMERALD     887
 #define MAX_TRAINERS_COUNT_EMERALD 1864
 
 #if IS_FRLG

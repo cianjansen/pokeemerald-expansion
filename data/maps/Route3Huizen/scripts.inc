@@ -148,3 +148,25 @@ Route3Huizen_EventScript_HuizenSign::
 Route3Huizen_Text_HuizenSign:
 	.string "Huizen\n"
 	.string "(2)$"
+
+@ Overhead flavor trigger - fires every time the player steps on this
+@ tile, no gating flag, and pushes them back one step west. Same
+@ push-back idiom as Route3GenHuis_EventScript_ImipodoTrigger.
+Route3Huizen_EventScript_NiemandInHuizenTrigger::
+	lockall
+	msgbox Route3Huizen_Text_NiemandInHuizen, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_PLAYER, Route3Huizen_Movement_PlayerPushWest
+	waitmovement 0
+	releaseall
+	end
+
+Route3Huizen_Movement_PlayerPushWest:
+	lock_facing_direction
+	walk_left
+	unlock_facing_direction
+	step_end
+
+Route3Huizen_Text_NiemandInHuizen:
+	.string "FRITS: Noh man er woont sws\n"
+	.string "verder niemand in Huizen$"
