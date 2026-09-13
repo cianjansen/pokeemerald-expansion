@@ -9574,7 +9574,7 @@
       "width": 48,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/Groningen/border.bin",
       "blockdata_filepath": "data/layouts/Groningen/map.bin"
     },
