@@ -9562,7 +9562,7 @@
       "id": "LAYOUT_ROUTE5MEPPEL",
       "name": "Route5Meppel_Layout",
       "width": 48,
-      "height": 36,
+      "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route5Meppel/border.bin",
@@ -9587,6 +9587,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Route3GenHuis/border.bin",
       "blockdata_filepath": "data/layouts/Route3GenHuis/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_GROMEP",
+      "name": "CaveGROMEP_Layout",
+      "width": 54,
+      "height": 76,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CaveGROMEP/border.bin",
+      "blockdata_filepath": "data/layouts/CaveGROMEP/map.bin"
     }
   ]
 }

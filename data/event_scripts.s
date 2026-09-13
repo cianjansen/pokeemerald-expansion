@@ -1790,3 +1790,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Groningen/scripts.inc"
 
 	.include "data/maps/Route3GenHuis/scripts.inc"
+
+	.include "data/maps/CaveGROMEP/scripts.inc"
