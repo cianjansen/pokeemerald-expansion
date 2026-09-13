@@ -9587,6 +9587,56 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Route3GenHuis/border.bin",
       "blockdata_filepath": "data/layouts/Route3GenHuis/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRONINGEN_POKE_CENTER",
+      "name": "GroningenPokeCenter_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/GroningenPokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/GroningenPokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRONINGEN_MART",
+      "name": "GroningenMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/GroningenMart/border.bin",
+      "blockdata_filepath": "data/layouts/GroningenMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRONINGEN_HABIB",
+      "name": "GroningenHabib_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/GroningenHabib/border.bin",
+      "blockdata_filepath": "data/layouts/GroningenHabib/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRONINGEN_NAM_1F",
+      "name": "GroningenNam_1F_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/GroningenNam_1F/border.bin",
+      "blockdata_filepath": "data/layouts/GroningenNam_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRONINGEN_FIENEKE",
+      "name": "GroningenFieneke_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/GroningenFieneke/border.bin",
+      "blockdata_filepath": "data/layouts/GroningenFieneke/map.bin"
     }
   ]
 }

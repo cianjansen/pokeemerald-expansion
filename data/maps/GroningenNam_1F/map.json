@@ -1,0 +1,92 @@
+{
+  "id": "MAP_GRONINGEN_NAM_1F",
+  "name": "GroningenNam_1F",
+  "layout": "LAYOUT_GRONINGEN_NAM_1F",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_GRONINGEN_NAM",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "NAM_TRAINER_1",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 11,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "GroningenNam_1F_EventScript_Trainer1",
+      "flag": "0"
+    },
+    {
+      "local_id": "NAM_TRAINER_2",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
+      "x": 5,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "GroningenNam_1F_EventScript_Trainer2",
+      "flag": "0"
+    },
+    {
+      "local_id": "NAM_BOSS",
+      "graphics_id": "OBJ_EVENT_GFX_MAXIE",
+      "x": 8,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GroningenNam_1F_EventScript_NamBoss",
+      "flag": "0"
+    },
+    {
+      "local_id": "HABIB_NAM",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 8,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GroningenNam_1F_EventScript_NamBoss",
+      "flag": "FLAG_NAM_BEATEN"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_GRONINGEN",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_GRONINGEN",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

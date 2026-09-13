@@ -375,6 +375,14 @@
       "y": 6,
       "respawn_map": "MAP_AMSTERDAM_CENTRUM_POKE_CENTER",
       "respawn_npc": "LOCALID_NONE"
+    },
+    {
+      "id": "HEAL_LOCATION_GRONINGEN_POKE_CENTER",
+      "map": "MAP_GRONINGEN_POKE_CENTER",
+      "x": 4,
+      "y": 6,
+      "respawn_map": "MAP_GRONINGEN_POKE_CENTER",
+      "respawn_npc": "LOCALID_NONE"
     }
   ]
 }

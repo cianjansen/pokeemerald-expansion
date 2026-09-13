@@ -1706,6 +1706,30 @@
     {
       "id": "MAPSEC_ROUTE3GEN_HUIS",
       "name": "HUIZE GEN"
+    },
+    {
+      "id": "MAPSEC_GRONINGEN",
+      "name": "GRONINGEN-GRIJPSKERK"
+    },
+    {
+      "id": "MAPSEC_GRONINGEN_POKE_CENTER",
+      "name": "DRUGSLAB GRONINGEN"
+    },
+    {
+      "id": "MAPSEC_GRONINGEN_MART",
+      "name": "KRUIDVAT"
+    },
+    {
+      "id": "MAPSEC_GRONINGEN_HABIB",
+      "name": "VILLA (UNFINISHED)"
+    },
+    {
+      "id": "MAPSEC_GRONINGEN_NAM",
+      "name": "NAM"
+    },
+    {
+      "id": "MAPSEC_GRONINGEN_FIENEKE",
+      "name": "GAS MANSION"
     }
   ]
 }

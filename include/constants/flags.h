@@ -70,11 +70,11 @@
 #define FLAG_LO_BEATEN    0x30 // Set once the player beats LO in AmsterdamCentrumLoHuis; gates his TM Toxic hand-off and Gracia's post-Lo dialogue line
 #define FLAG_GOT_LEFTOVER_GIVER_GIFT    0x31 // Set after first talking to LEFTOVER_GIVER in AmsterdamCentrum; gates the one-time 6x Leftovers gift and switches her to the "burnt toast" repeat line
 #define FLAG_HIDE_ROUTE3HUIZEN_KYOGRE    0x32 // Set right before the wild Kyogre battle starts on Route3Huizen (regardless of outcome); hides the KYOGRE_ENCOUNTER object for good, same pattern as FLAG_HIDE_VONDELPARK_MEW
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
+#define FLAG_HABIB_BEATEN    0x33 // Set once the player beats HABIB in GroningenHabib; gates Groningen's completion (NAM_CAVE_BLOCKER stepping aside, LEONIE's repeat dialogue), same pattern as FLAG_LO_BEATEN/FLAG_TOBIAS_BEATEN
+#define FLAG_NAM_BEATEN      0x34 // Set once NAM_BAAS is beaten in GroningenNam_1F; hides HABIB_NAM there (walks off first), and reveals HABIB_HUIS in GroningenHabib (see GroningenHabib_OnTransition)
+#define FLAG_SEEN_GRONINGEN_AARDBEVING    0x35 // Set the first time the player steps on Groningen's post-HABIB_BEATEN earthquake trigger, so the FRITS/ShakeCamera cutscene only plays once
+#define FLAG_GOT_FIENEKE_LOOT    0x36 // Set after first looting FIENEKE_LOOT's corpse in GroningenFieneke; gates the one-time 6x Leftovers + 6x Focus Sash gift and switches to the "stinkt hier" repeat line
+#define FLAG_HIDE_GRONINGEN_HABIB_HUIS    0x37 // Set at New Game (EventScript_ResetAllMapFlags) so HABIB_HUIS in GroningenHabib starts hidden; cleared in GroningenNam_1F_EventScript_NamBossPostBattle once FLAG_NAM_BEATEN is set, same "start hidden, reveal on flag" convention as vanilla's FLAG_HIDE_PETALBURG_CITY_WALLY
 #define FLAG_UNUSED_0x038    0x38 // Unused Flag
 #define FLAG_UNUSED_0x039    0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag

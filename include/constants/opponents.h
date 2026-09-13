@@ -905,7 +905,13 @@
 // Route3GenHuis trainers
 #define TRAINER_OUDERKERK_GEN                886
 
-#define TRAINERS_COUNT_EMERALD     887
+// GroningenNam_1F / GroningenHabib trainers
+#define TRAINER_GRONINGEN_NAM_1              887
+#define TRAINER_GRONINGEN_NAM_2              888
+#define TRAINER_NAM_BAAS                     889
+#define TRAINER_HABIB                        890
+
+#define TRAINERS_COUNT_EMERALD     891
 #define MAX_TRAINERS_COUNT_EMERALD 1864
 
 #if IS_FRLG

@@ -17578,3 +17578,83 @@ Level: 54
 
 Jynx
 Level: 57
+
+=== TRAINER_GRONINGEN_NAM_1 ===
+Name: NAM EXPERT
+Class: Expert
+Pic: Expert M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Graveler
+Level: 55
+- Earthquake
+
+Koffing
+Level: 56
+- Earthquake
+
+=== TRAINER_GRONINGEN_NAM_2 ===
+Name: NAM EXPERT
+Class: Expert
+Pic: Expert F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Aron
+Level: 56
+- Earthquake
+
+Weezing
+Level: 57
+- Earthquake
+
+=== TRAINER_NAM_BAAS ===
+Name: BAAS
+Class: Magma Leader
+Pic: Magma Leader Maxie
+Gender: Male
+Music: Magma
+Double Battle: No
+AI: Check Bad Move
+
+Dugtrio
+Level: 59
+- Earthquake
+
+Magcargo
+Level: 60
+- Earthquake
+
+Aggron
+Level: 61
+- Earthquake
+
+=== TRAINER_HABIB ===
+Name: HABIB
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Rhyperior
+Level: 62
+- Earthquake
+
+Skuntank
+Level: 63
+- Earthquake
+
+Toxicroak
+Level: 64
+- Earthquake
+
+Tyranitar
+Level: 65
+- Earthquake

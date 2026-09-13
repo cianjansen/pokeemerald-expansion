@@ -3,7 +3,7 @@
   "name": "Groningen",
   "layout": "LAYOUT_GRONINGEN",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_GRONINGEN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -21,7 +21,8 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "local_id": "HONKY_TONK_ENJOYER",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
       "x": 23,
       "y": 22,
       "elevation": 0,
@@ -30,11 +31,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Groningen_EventScript_HonkyTonkEnjoyer",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "local_id": "HENK_FIENEKE",
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
       "x": 30,
       "y": 16,
       "elevation": 0,
@@ -43,7 +45,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Groningen_EventScript_Henk",
       "flag": "0"
     },
     {
@@ -58,9 +60,111 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "local_id": "NAM_CAVE_BLOCKER",
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 33,
+      "y": 27,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Groningen_EventScript_NamMedewerker",
+      "flag": "0"
     }
   ],
-  "warp_events": [],
-  "coord_events": [],
-  "bg_events": []
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_GRONINGEN_POKE_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_GRONINGEN_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_GRONINGEN_HABIB",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 37,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_GRONINGEN_NAM_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_GRONINGEN_FIENEKE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 35,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Groningen_EventScript_AardbevingTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 34,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Groningen_EventScript_AardbevingTrigger"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 37,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Groningen_EventScript_GroningenSign"
+    },
+    {
+      "type": "sign",
+      "x": 34,
+      "y": 27,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Groningen_EventScript_GasSign"
+    },
+    {
+      "type": "sign",
+      "x": 35,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Groningen_EventScript_NamSign"
+    },
+    {
+      "type": "sign",
+      "x": 23,
+      "y": 34,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Groningen_EventScript_MegamansionSign"
+    }
+  ]
 }
