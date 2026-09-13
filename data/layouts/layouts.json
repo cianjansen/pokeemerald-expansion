@@ -9597,6 +9597,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/CaveGROMEP/border.bin",
       "blockdata_filepath": "data/layouts/CaveGROMEP/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_MAX_MEP",
+      "name": "CaveMaxMep_Layout",
+      "width": 26,
+      "height": 31,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CaveMaxMep/border.bin",
+      "blockdata_filepath": "data/layouts/CaveMaxMep/map.bin"
     }
   ]
 }
