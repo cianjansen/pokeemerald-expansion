@@ -9562,7 +9562,7 @@
       "id": "LAYOUT_ROUTE5MEPPEL",
       "name": "Route5Meppel_Layout",
       "width": 48,
-      "height": 30,
+      "height": 36,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route5Meppel/border.bin",
