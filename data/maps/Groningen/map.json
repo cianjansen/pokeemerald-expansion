@@ -26,7 +26,7 @@
       "x": 23,
       "y": 22,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -110,6 +110,13 @@
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_GRONINGEN_FIENEKE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 33,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_GROMEP",
       "dest_warp_id": "0"
     }
   ],

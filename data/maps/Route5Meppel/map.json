@@ -34,7 +34,22 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 1,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_MAX_MEP",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_MAX_MEP",
+      "dest_warp_id": "3"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

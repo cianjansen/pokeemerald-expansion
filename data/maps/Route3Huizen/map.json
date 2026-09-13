@@ -209,6 +209,13 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE3GEN_HUIS",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 48,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_GROMEP",
+      "dest_warp_id": "7"
     }
   ],
   "coord_events": [
