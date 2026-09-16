@@ -9657,6 +9657,36 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/CaveMaxMep/border.bin",
       "blockdata_filepath": "data/layouts/CaveMaxMep/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_MEP_LIM",
+      "name": "CaveMepLim_Layout",
+      "width": 52,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CaveMepLim/border.bin",
+      "blockdata_filepath": "data/layouts/CaveMepLim/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIMBURG",
+      "name": "Limburg_Layout",
+      "width": 44,
+      "height": 46,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Sootopolis",
+      "border_filepath": "data/layouts/Limburg/border.bin",
+      "blockdata_filepath": "data/layouts/Limburg/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE6LIMBURG",
+      "name": "Route6Limburg_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Route6Limburg/border.bin",
+      "blockdata_filepath": "data/layouts/Route6Limburg/map.bin"
     }
   ]
 }

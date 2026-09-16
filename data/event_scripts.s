@@ -1804,3 +1804,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/CaveGROMEP/scripts.inc"
 
 	.include "data/maps/CaveMaxMep/scripts.inc"
+
+	.include "data/maps/CaveMepLim/scripts.inc"
+
+	.include "data/maps/Limburg/scripts.inc"
+
+	.include "data/maps/Route6Limburg/scripts.inc"

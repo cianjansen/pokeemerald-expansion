@@ -1179,7 +1179,10 @@
     "Route5Meppel",
     "Groningen",
     "CaveGROMEP",
-    "CaveMaxMep"
+    "CaveMaxMep",
+    "CaveMepLim",
+    "Route6Limburg",
+    "Limburg"
   ],
   "gMapGroup_CMIndoorOuderkerk": [
     "Ouderkerk_MargrietHouse_1F_2",
