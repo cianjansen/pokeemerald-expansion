@@ -81,7 +81,8 @@
     "gMapGroup_IndoorAmsterdamCentrum",
     "gMapGroup_CMIndoorRoute3",
     "gMapGroup_IndoorGroningen",
-    "gMapGroup_IndoorLimburg"
+    "gMapGroup_IndoorLimburg",
+    "gMapGroup_IndoorMeppel"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1222,5 +1223,11 @@
     "Limburg_CasHuis",
     "Limburg_Pokecenter",
     "Limburg_Pokemart"
+  ],
+  "gMapGroup_IndoorMeppel": [
+    "MeppelPokeCenter",
+    "MeppelMart",
+    "MeppelFrida1",
+    "MeppelMelvin"
   ]
 }

@@ -1820,3 +1820,11 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Limburg_Pokecenter/scripts.inc"
 
 	.include "data/maps/Limburg_Pokemart/scripts.inc"
+
+	.include "data/maps/MeppelPokeCenter/scripts.inc"
+
+	.include "data/maps/MeppelMart/scripts.inc"
+
+	.include "data/maps/MeppelFrida1/scripts.inc"
+
+	.include "data/maps/MeppelMelvin/scripts.inc"

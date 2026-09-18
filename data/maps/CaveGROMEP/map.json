@@ -3,7 +3,7 @@
   "name": "CaveGROMEP",
   "layout": "LAYOUT_CAVE_GROMEP",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_CAVE_GROMEP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
