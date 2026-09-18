@@ -1778,6 +1778,14 @@
     {
       "id": "MAPSEC_AMSTERDAM_CENTRUM_MACUMBA",
       "name": "FIESTA MACUMBA"
+    },
+    {
+      "id": "MAPSEC_LIMBURG_POKECENTER",
+      "name": "DRUGSLAB - LIMBURG"
+    },
+    {
+      "id": "MAPSEC_LIMBURG_POKEMART",
+      "name": "KRUIDVAT"
     }
   ]
 }
