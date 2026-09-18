@@ -3,7 +3,7 @@
   "name": "AmsterdamCentrumMacumba",
   "layout": "LAYOUT_AMSTERDAM_CENTRUM_MACUMBA",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_AMSTERDAM_CENTRUM_MACUMBA",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -15,6 +15,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "MR_MACUMBA",
       "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
       "x": 5,
       "y": 4,
@@ -24,11 +25,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AmsterdamCentrumMacumba_EventScript_MrMacumba",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
+      "local_id": "STAGE_BOUNCER",
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
       "x": 1,
       "y": 6,
       "elevation": 0,
@@ -37,11 +39,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "01",
-      "script": "NULL",
+      "script": "AmsterdamCentrumMacumba_EventScript_StageBouncer",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
+      "local_id": "BOUNCER",
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
       "x": 26,
       "y": 11,
       "elevation": 0,
@@ -50,23 +53,25 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "NULL",
+      "script": "AmsterdamCentrumMacumba_EventScript_Bouncer",
       "flag": "0"
     },
     {
+      "local_id": "LOCKERGUY",
       "graphics_id": "OBJ_EVENT_GFX_ARCHIE",
       "x": 17,
       "y": 9,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AmsterdamCentrumMacumba_EventScript_LockerGuy",
       "flag": "0"
     },
     {
+      "local_id": "NIEK",
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
       "x": 5,
       "y": 10,
@@ -76,10 +81,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AmsterdamCentrumMacumba_EventScript_Niek",
       "flag": "0"
     },
     {
+      "local_id": "IVONNE",
       "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
       "x": 6,
       "y": 10,
@@ -89,24 +95,26 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AmsterdamCentrumMacumba_EventScript_Ivonne",
       "flag": "0"
     },
     {
+      "local_id": "LATINA_ENJOYER_2",
       "graphics_id": "OBJ_EVENT_GFX_MAN_2",
       "x": 2,
       "y": 12,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AmsterdamCentrumMacumba_EventScript_LatinaEnjoyer2",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BOY",
+      "local_id": "LATINA",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
       "x": 9,
       "y": 9,
       "elevation": 0,
@@ -115,7 +123,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "AmsterdamCentrumMacumba_EventScript_Latina",
       "flag": "0"
     }
   ],
@@ -128,6 +136,25 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AmsterdamCentrumMacumba_EventScript_ExitBlockerTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AmsterdamCentrumMacumba_EventScript_ExitBlockerTrigger"
+    }
+  ],
   "bg_events": []
 }
