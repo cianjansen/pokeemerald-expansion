@@ -26,7 +26,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "AmsterdamCentrumFritsHuis_EventScript_FritsMomTalk",
-      "flag": "0"
+      "flag": "FLAG_VISITED_MACUMBA"
     }
   ],
   "warp_events": [
@@ -69,7 +69,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "AmsterdamCentrumFritsHuis_EventScript_NoiseInvestigateTrigger"
     },
     {
       "type": "trigger",
@@ -78,7 +78,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "AmsterdamCentrumFritsHuis_EventScript_NoiseInvestigateTrigger"
     }
   ],
   "bg_events": []

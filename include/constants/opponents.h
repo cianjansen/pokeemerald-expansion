@@ -922,7 +922,10 @@
 #define TRAINER_CAVE_GROMEP_WOUTER           894
 #define TRAINER_CAVE_GROMEP_FLORIS           895
 
-#define TRAINERS_COUNT_EMERALD     896
+// AmsterdamCentrumFritsHuis_2F trainers
+#define TRAINER_CIAN                         896
+
+#define TRAINERS_COUNT_EMERALD     897
 #define MAX_TRAINERS_COUNT_EMERALD 1864
 
 #if IS_FRLG

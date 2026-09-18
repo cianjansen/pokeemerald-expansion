@@ -42,7 +42,15 @@ AmsterdamCentrumFritsHuis_EventScript_MacumbaHangoverCheck::
 	goto_if_unset FLAG_VISITED_MACUMBA, AmsterdamCentrumFritsHuis_EventScript_TeaSceneDone
 	goto_if_set FLAG_HEARD_MACUMBA_HANGOVER, AmsterdamCentrumFritsHuis_EventScript_TeaSceneDone
 	lockall
+	setrespawn HEAL_LOCATION_AMSTERDAM_CENTRUM_FRITS_HUIS
+	special HealPlayerParty
 	msgbox AmsterdamCentrumFritsHuis_Text_MacumbaHangover, MSGBOX_DEFAULT
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 32 @ num shakes
+	setvar VAR_0x8007, 2  @ shake delay
+	special ShakeCamera
+	msgbox AmsterdamCentrumFritsHuis_Text_WatEenGetril, MSGBOX_DEFAULT
 	setflag FLAG_HEARD_MACUMBA_HANGOVER
 	releaseall
 	end
@@ -72,7 +80,10 @@ AmsterdamCentrumFritsHuis_EventScript_FritsMomTalk::
 	release
 	end
 
+@ Inactive once FLAG_VISITED_MACUMBA is set - the bedroom's no longer
+@ off-limits, that's where CIAN is waiting.
 AmsterdamCentrumFritsHuis_EventScript_BedroomBlocker::
+	goto_if_set FLAG_VISITED_MACUMBA, AmsterdamCentrumFritsHuis_EventScript_BedroomBlockerInactive
 	lockall
 	msgbox AmsterdamCentrumFritsHuis_Text_BedroomBlocker, MSGBOX_DEFAULT
 	closemessage
@@ -81,10 +92,34 @@ AmsterdamCentrumFritsHuis_EventScript_BedroomBlocker::
 	releaseall
 	end
 
+AmsterdamCentrumFritsHuis_EventScript_BedroomBlockerInactive::
+	end
+
 AmsterdamCentrumFritsHuis_Movement_PushPlayerBackSouth:
 	lock_facing_direction
 	walk_down
 	unlock_facing_direction
+	step_end
+
+@ Fires from the two front-door tiles (coord_events at 3,7 and 4,7). Only
+@ does anything once FLAG_VISITED_MACUMBA is set (no gate flag of its own,
+@ so it repeats every time - there's nothing left to spoil once you've
+@ already gone upstairs).
+AmsterdamCentrumFritsHuis_EventScript_NoiseInvestigateTrigger::
+	goto_if_unset FLAG_VISITED_MACUMBA, AmsterdamCentrumFritsHuis_EventScript_NoiseInvestigateTrigger_Done
+	lockall
+	msgbox AmsterdamCentrumFritsHuis_Text_NoiseInvestigate, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_PLAYER, AmsterdamCentrumFritsHuis_Movement_PlayerStepNorth
+	waitmovement 0
+	releaseall
+	end
+
+AmsterdamCentrumFritsHuis_EventScript_NoiseInvestigateTrigger_Done::
+	end
+
+AmsterdamCentrumFritsHuis_Movement_PlayerStepNorth:
+	walk_up
 	step_end
 
 AmsterdamCentrumFritsHuis_Text_MomTeaTalk:
@@ -111,3 +146,11 @@ AmsterdamCentrumFritsHuis_Text_MacumbaHangover:
 	.string "brak man, dikke koppijn. En\l"
 	.string "nog steeds die Cian niet\p"
 	.string "gevonden...$"
+
+AmsterdamCentrumFritsHuis_Text_WatEenGetril:
+	.string "FRITS: Wat een getril allemaal,\n"
+	.string "wat zou dat zijn?$"
+
+AmsterdamCentrumFritsHuis_Text_NoiseInvestigate:
+	.string "FRITS: Eerst even kijken wat\n"
+	.string "dat geluid was$"

@@ -81,16 +81,19 @@ AmsterdamCentrumMacumba_EventScript_Ivonne::
 	end
 
 AmsterdamCentrumMacumba_Text_Ivonne:
-	.string "IVONNE: Ik ga mijn\n"
-	.string "vrijgezellenfeestje sowieso\l"
-	.string "geven bij Jack's casino$"
+	.string "IVONNE: Cian? He was here\n"
+	.string "before, but he just left to go\l"
+	.string "home with a cute girl.\p"
+	.string "A real cougar! A proper\n"
+	.string "mamacita...$"
 
 @ MR_MACUMBA's speech, then FRITS gets walked out onto the dance floor and
 @ spins before the player is warped home. Movement assumes the player talks
 @ to MR_MACUMBA (5,4) from directly below at (5,5): walk_up onto his row,
 @ walk_left to column 2 (reaching tile 2,4), then walk_down to tile 2,9,
-@ matching the two waypoints given. Reuses the same FritsHuis front-door
-@ warp coords AmsterdamCentrum_EventScript_FritsMom already warps to.
+@ matching the two waypoints given. Lands 1 tile north of the FritsHuis
+@ front-door warp coords AmsterdamCentrum_EventScript_FritsMom already
+@ warps to (3,7), i.e. (3,6), so FRITS arrives already a step inside.
 AmsterdamCentrumMacumba_EventScript_MrMacumba::
 	lock
 	faceplayer
@@ -103,7 +106,7 @@ AmsterdamCentrumMacumba_EventScript_MrMacumba::
 	waitmovement 0
 	setflag FLAG_VISITED_MACUMBA
 	hideobjectat LOCALID_PLAYER, MAP_AMSTERDAM_CENTRUM_MACUMBA
-	warp MAP_AMSTERDAM_CENTRUM_FRITS_HUIS, 3, 7
+	warp MAP_AMSTERDAM_CENTRUM_FRITS_HUIS, 3, 6
 	waitstate
 	release
 	end

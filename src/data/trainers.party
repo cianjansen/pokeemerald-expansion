@@ -17674,6 +17674,33 @@ Level: 65
 Hitmontop
 Level: 67
 
+=== TRAINER_CIAN ===
+Name: CIAN
+Class: Champion
+Pic: Champion Wallace
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Luxray
+Level: 79
+
+Arcanine
+Level: 80
+
+Darkrai
+Level: 82
+
+Gengar
+Level: 80
+
+Kabutops
+Level: 77
+
+Glaceon
+Level: 78
+
 === TRAINER_MILAN_MEPPEL ===
 Name: MILAN
 Pic: Leader Norman

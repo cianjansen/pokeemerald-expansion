@@ -391,6 +391,14 @@
       "y": 6,
       "respawn_map": "MAP_MEPPEL_POKE_CENTER",
       "respawn_npc": "LOCALID_NONE"
+    },
+    {
+      "id": "HEAL_LOCATION_AMSTERDAM_CENTRUM_FRITS_HUIS",
+      "map": "MAP_AMSTERDAM_CENTRUM_FRITS_HUIS",
+      "x": 9,
+      "y": 5,
+      "respawn_map": "MAP_AMSTERDAM_CENTRUM_FRITS_HUIS",
+      "respawn_npc": "LOCALID_NONE"
     }
   ]
 }
