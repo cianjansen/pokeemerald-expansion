@@ -22,13 +22,28 @@ AmsterdamCentrumFritsHuis_OnFrame:
 @ this detours one row south (y=6) for the rightward stretch and only turns
 @ back up onto the seat row for the final step - up 1, right 6, up 1.
 AmsterdamCentrumFritsHuis_EventScript_TeaScene::
-	goto_if_set FLAG_FRITS_MOM_HOUSE_INTRO_DONE, AmsterdamCentrumFritsHuis_EventScript_TeaSceneDone
+	goto_if_set FLAG_FRITS_MOM_HOUSE_INTRO_DONE, AmsterdamCentrumFritsHuis_EventScript_MacumbaHangoverCheck
 	lockall
 	applymovement FRITS_MOM, Common_Movement_FaceRight
 	applymovement LOCALID_PLAYER, AmsterdamCentrumFritsHuis_Movement_PlayerWalkToSeat
 	waitmovement 0
 	msgbox AmsterdamCentrumFritsHuis_Text_MomTeaTalk, MSGBOX_DEFAULT
 	setflag FLAG_FRITS_MOM_HOUSE_INTRO_DONE
+	releaseall
+	end
+
+@ Fires on the same first-active-frame check as the tea scene above (see the
+@ ON_FRAME_TABLE comment up top for why it has to be this and not
+@ ON_TRANSITION). Only shows once, right after FRITS is warped home from
+@ AmsterdamCentrumMacumba - FLAG_VISITED_MACUMBA is set every time that
+@ warp happens, so FLAG_HEARD_MACUMBA_HANGOVER is what actually gates the
+@ repeat on later visits.
+AmsterdamCentrumFritsHuis_EventScript_MacumbaHangoverCheck::
+	goto_if_unset FLAG_VISITED_MACUMBA, AmsterdamCentrumFritsHuis_EventScript_TeaSceneDone
+	goto_if_set FLAG_HEARD_MACUMBA_HANGOVER, AmsterdamCentrumFritsHuis_EventScript_TeaSceneDone
+	lockall
+	msgbox AmsterdamCentrumFritsHuis_Text_MacumbaHangover, MSGBOX_DEFAULT
+	setflag FLAG_HEARD_MACUMBA_HANGOVER
 	releaseall
 	end
 
@@ -90,3 +105,9 @@ AmsterdamCentrumFritsHuis_Text_BedroomBlocker:
 	.string "jij te zoeken in mijn\l"
 	.string "slaapkamer? Ga daar maar niet\l"
 	.string "naar binnen$"
+
+AmsterdamCentrumFritsHuis_Text_MacumbaHangover:
+	.string "FRITS: OHHHH ik ben kanker\n"
+	.string "brak man, dikke koppijn. En\l"
+	.string "nog steeds die Cian niet\p"
+	.string "gevonden...$"

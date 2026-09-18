@@ -76,8 +76,8 @@
 #define FLAG_GOT_FIENEKE_LOOT    0x36 // Set after first looting FIENEKE_LOOT's corpse in GroningenFieneke; gates the one-time 6x Leftovers + 6x Focus Sash gift and switches to the "stinkt hier" repeat line
 #define FLAG_HIDE_GRONINGEN_HABIB_HUIS    0x37 // Set at New Game (EventScript_ResetAllMapFlags) so HABIB_HUIS in GroningenHabib starts hidden; cleared in GroningenNam_1F_EventScript_NamBossPostBattle once FLAG_NAM_BEATEN is set, same "start hidden, reveal on flag" convention as vanilla's FLAG_HIDE_PETALBURG_CITY_WALLY
 #define FLAG_HIDE_CAVE_MEP_LIM_GROUDON    0x38 // Set right before the wild Groudon battle starts in CaveMepLim (regardless of outcome); hides the GROUDON_ENCOUNTER object for good, same pattern as FLAG_HIDE_ROUTE3HUIZEN_KYOGRE
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
+#define FLAG_VISITED_MACUMBA    0x39 // Set once FRITS finishes talking to MR_MACUMBA in AmsterdamCentrumMacumba and gets walked/warped out
+#define FLAG_HEARD_MACUMBA_HANGOVER    0x3A // Set after FRITS delivers his one-time hangover line in AmsterdamCentrumFritsHuis, right after warping home from AmsterdamCentrumMacumba; gates that line from repeating on later visits
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
