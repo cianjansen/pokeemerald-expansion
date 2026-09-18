@@ -9687,6 +9687,46 @@
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/Route6Limburg/border.bin",
       "blockdata_filepath": "data/layouts/Route6Limburg/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEPPEL_POKE_CENTER",
+      "name": "MeppelPokeCenter_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/MeppelPokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/MeppelPokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEPPEL_MART",
+      "name": "MeppelMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/MeppelMart/border.bin",
+      "blockdata_filepath": "data/layouts/MeppelMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEPPEL_FRIDA1",
+      "name": "MeppelFrida1_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/MeppelFrida1/border.bin",
+      "blockdata_filepath": "data/layouts/MeppelFrida1/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEPPEL_MELVIN",
+      "name": "MeppelMelvin_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/MeppelMelvin/border.bin",
+      "blockdata_filepath": "data/layouts/MeppelMelvin/map.bin"
     }
   ]
 }

@@ -911,7 +911,13 @@
 #define TRAINER_NAM_BAAS                     889
 #define TRAINER_HABIB                        890
 
-#define TRAINERS_COUNT_EMERALD     891
+// Route5Meppel trainers
+#define TRAINER_MAXIE_MEPPEL                 891
+
+// MeppelFrida1 trainers
+#define TRAINER_MILAN_MEPPEL                 892
+
+#define TRAINERS_COUNT_EMERALD     893
 #define MAX_TRAINERS_COUNT_EMERALD 1864
 
 #if IS_FRLG

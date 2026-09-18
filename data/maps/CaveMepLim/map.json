@@ -15,6 +15,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "GERRIE",
       "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
       "x": 19,
       "y": 18,
@@ -28,6 +29,7 @@
       "flag": "0"
     },
     {
+      "local_id": "RIKKERT",
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
       "x": 31,
       "y": 40,
@@ -41,6 +43,7 @@
       "flag": "0"
     },
     {
+      "local_id": "RIES",
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
       "x": 17,
       "y": 40,
@@ -119,7 +122,36 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 46,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE5MEPPEL",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 46,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_MEP_LIM",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 23,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_MEP_LIM",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 24,
+      "y": 46,
+      "elevation": 0,
+      "dest_map": "MAP_LIMBURG",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

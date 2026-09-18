@@ -1730,6 +1730,34 @@
     {
       "id": "MAPSEC_GRONINGEN_FIENEKE",
       "name": "GAS MANSION"
+    },
+    {
+      "id": "MAPSEC_ROUTE5MEPPEL",
+      "name": "MEPPEL"
+    },
+    {
+      "id": "MAPSEC_CAVE_GROMEP",
+      "name": "IQ CHECK"
+    },
+    {
+      "id": "MAPSEC_CAVE_MAX_MEP",
+      "name": "IQ CHECK"
+    },
+    {
+      "id": "MAPSEC_MEPPEL_POKE_CENTER",
+      "name": "DRUGSLAB - MEPPEL"
+    },
+    {
+      "id": "MAPSEC_MEPPEL_MART",
+      "name": "KRUIDVAT"
+    },
+    {
+      "id": "MAPSEC_MEPPEL_FRIDA",
+      "name": "FRIDA'S KROT"
+    },
+    {
+      "id": "MAPSEC_MEPPEL_MELVIN",
+      "name": "RIJTJESHUIS"
     }
   ]
 }

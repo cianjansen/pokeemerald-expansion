@@ -80,7 +80,8 @@
     "gMapGroup_CMIndoorAmsterdamZuid",
     "gMapGroup_IndoorAmsterdamCentrum",
     "gMapGroup_CMIndoorRoute3",
-    "gMapGroup_IndoorGroningen"
+    "gMapGroup_IndoorGroningen",
+    "gMapGroup_IndoorMeppel"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1214,5 +1215,11 @@
     "GroningenHabib",
     "GroningenNam_1F",
     "GroningenFieneke"
+  ],
+  "gMapGroup_IndoorMeppel": [
+    "MeppelPokeCenter",
+    "MeppelMart",
+    "MeppelFrida1",
+    "MeppelMelvin"
   ]
 }

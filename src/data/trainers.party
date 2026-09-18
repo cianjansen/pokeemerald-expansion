@@ -17658,3 +17658,47 @@ Level: 64
 Tyranitar
 Level: 65
 - Earthquake
+
+=== TRAINER_MAXIE_MEPPEL ===
+Name: MAXIE
+Class: Magma Leader
+Pic: Steven
+Gender: Male
+Music: Magma
+Double Battle: No
+AI: Check Bad Move
+
+Alakazam
+Level: 65
+
+Hitmontop
+Level: 67
+
+=== TRAINER_MILAN_MEPPEL ===
+Name: MILAN
+Pic: Leader Norman
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Salamence
+Level: 67
+- Dragon Claw
+- Outrage
+- Dragon Dance
+
+Umbreon
+Level: 69
+- Toxic
+- Protect
+
+Yanmega
+Level: 71
+- Protect
+- Bug Buzz
+
+Roserade
+Level: 73
+- Sludge Bomb
+- Giga Drain

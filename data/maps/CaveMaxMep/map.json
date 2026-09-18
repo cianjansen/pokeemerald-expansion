@@ -3,7 +3,7 @@
   "name": "CaveMaxMep",
   "layout": "LAYOUT_CAVE_MAX_MEP",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_CAVE_MAX_MEP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
