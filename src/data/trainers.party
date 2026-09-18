@@ -17658,3 +17658,102 @@ Level: 64
 Tyranitar
 Level: 65
 - Earthquake
+
+=== TRAINER_CAVE_GROMEP_ANOUK ===
+Name: ANOUK
+Class: Lady
+Pic: Lady
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Lapras
+Hardy Nature
+Level: 54
+- Surf
+- Ice Beam
+- Body Slam
+- Thunderbolt
+
+Froslass
+Hardy Nature
+Level: 55
+- Ice Beam
+- Shadow Ball
+- Thunderbolt
+- Destiny Bond
+
+Mamoswine
+Hardy Nature
+Level: 56
+- Earthquake
+- Ice Shard
+- Stone Edge
+- Superpower
+
+=== TRAINER_CAVE_GROMEP_WOUTER ===
+Name: WOUTER
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Hippowdon
+Hardy Nature
+Level: 55
+- Earthquake
+- Stone Edge
+- Slack Off
+- Yawn
+
+Rhyperior
+Hardy Nature
+Level: 56
+- Earthquake
+- Stone Edge
+- Megahorn
+- Ice Punch
+
+Gliscor
+Hardy Nature
+Level: 57
+- Earthquake
+- X-Scissor
+- Stone Edge
+- Roost
+
+=== TRAINER_CAVE_GROMEP_FLORIS ===
+Name: FLORIS
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Gengar
+Hardy Nature
+Level: 60
+- Shadow Ball
+- Sludge Bomb
+- Thunderbolt
+- Psychic
+
+Lucario
+Hardy Nature
+Level: 61
+- Close Combat
+- Extreme Speed
+- Ice Punch
+- Aura Sphere
+
+Milotic
+Hardy Nature
+Level: 62
+- Surf
+- Ice Beam
+- Recover
+- Toxic

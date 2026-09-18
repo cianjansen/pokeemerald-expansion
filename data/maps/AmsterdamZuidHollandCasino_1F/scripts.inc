@@ -76,6 +76,13 @@ AmsterdamZuidHollandCasino_1F_EventScript_Patron2::
 	release
 	end
 
+AmsterdamZuidHollandCasino_1F_EventScript_Sjoerd::
+	lock
+	faceplayer
+	msgbox AmsterdamZuidHollandCasino_1F_Text_Sjoerd, MSGBOX_DEFAULT
+	release
+	end
+
 AmsterdamZuidHollandCasino_1F_EventScript_MaxBrundt::
 	trainerbattle_single TRAINER_OUDERKERK_MAX_BRUNDT, AmsterdamZuidHollandCasino_1F_Text_MaxBrundtIntro, AmsterdamZuidHollandCasino_1F_Text_MaxBrundtDefeat
 	msgbox AmsterdamZuidHollandCasino_1F_Text_MaxBrundtDefeat, MSGBOX_AUTOCLOSE
@@ -138,6 +145,11 @@ AmsterdamZuidHollandCasino_1F_Text_PaidForChips:
 
 AmsterdamZuidHollandCasino_1F_Text_GambleGamble:
 	.string "GAMBLE GAMBLE KUTTT$"
+
+AmsterdamZuidHollandCasino_1F_Text_Sjoerd:
+	.string "SJOERD: Yarl Yarl YAAAARL\n"
+	.string "JAAAAAAA. 30 billie in 5\l"
+	.string "seconde. Gozer wat moet je?$"
 
 AmsterdamZuidHollandCasino_1F_Text_MaxBrundtIntro:
 	.string "MAX BRUNDT: Ik hou vet veel\n"

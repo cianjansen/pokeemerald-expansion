@@ -80,7 +80,8 @@
     "gMapGroup_CMIndoorAmsterdamZuid",
     "gMapGroup_IndoorAmsterdamCentrum",
     "gMapGroup_CMIndoorRoute3",
-    "gMapGroup_IndoorGroningen"
+    "gMapGroup_IndoorGroningen",
+    "gMapGroup_IndoorLimburg"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1203,7 +1204,8 @@
     "AmsterdamCentrumMart",
     "AmsterdamCentrumFritsHuis",
     "AmsterdamCentrumFritsHuis_2F",
-    "AmsterdamCentrumLoHuis"
+    "AmsterdamCentrumLoHuis",
+    "AmsterdamCentrumMacumba"
   ],
   "gMapGroup_CMIndoorRoute3": [
     "Route3GenHuis"
@@ -1214,5 +1216,11 @@
     "GroningenHabib",
     "GroningenNam_1F",
     "GroningenFieneke"
+  ],
+  "gMapGroup_IndoorLimburg": [
+    "Limburg_WildersHouse",
+    "Limburg_CasHuis",
+    "Limburg_Pokecenter",
+    "Limburg_Pokemart"
   ]
 }

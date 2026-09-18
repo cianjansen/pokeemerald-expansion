@@ -1810,3 +1810,13 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Limburg/scripts.inc"
 
 	.include "data/maps/Route6Limburg/scripts.inc"
+
+	.include "data/maps/AmsterdamCentrumMacumba/scripts.inc"
+
+	.include "data/maps/Limburg_WildersHouse/scripts.inc"
+
+	.include "data/maps/Limburg_CasHuis/scripts.inc"
+
+	.include "data/maps/Limburg_Pokecenter/scripts.inc"
+
+	.include "data/maps/Limburg_Pokemart/scripts.inc"

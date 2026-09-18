@@ -911,7 +911,12 @@
 #define TRAINER_NAM_BAAS                     889
 #define TRAINER_HABIB                        890
 
-#define TRAINERS_COUNT_EMERALD     891
+// CaveGROMEP trainers
+#define TRAINER_CAVE_GROMEP_ANOUK            891
+#define TRAINER_CAVE_GROMEP_WOUTER           892
+#define TRAINER_CAVE_GROMEP_FLORIS           893
+
+#define TRAINERS_COUNT_EMERALD     894
 #define MAX_TRAINERS_COUNT_EMERALD 1864
 
 #if IS_FRLG
