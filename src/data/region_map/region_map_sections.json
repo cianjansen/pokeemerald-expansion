@@ -1758,6 +1758,14 @@
     {
       "id": "MAPSEC_MEPPEL_MELVIN",
       "name": "RIJTJESHUIS"
+    },
+    {
+      "id": "MAPSEC_CAVE_MEP_LIM",
+      "name": "BRABANTGROT"
+    },
+    {
+      "id": "MAPSEC_LIMBURG",
+      "name": "LIMBURG"
     }
   ]
 }
