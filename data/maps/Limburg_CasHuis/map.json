@@ -3,7 +3,7 @@
   "name": "Limburg_CasHuis",
   "layout": "LAYOUT_LIMBURG_CAS_HUIS",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_LIMBURG_CAS_HUIS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -13,7 +13,36 @@
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "CAS",
+      "graphics_id": "OBJ_EVENT_GFX_BOY_2",
+      "x": 6,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Limburg_CasHuis_EventScript_Cas",
+      "flag": "0"
+    },
+    {
+      "local_id": "CLARE",
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 3,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Limburg_CasHuis_EventScript_Clare",
+      "flag": "0"
+    }
+  ],
   "warp_events": [],
   "coord_events": [],
   "bg_events": []

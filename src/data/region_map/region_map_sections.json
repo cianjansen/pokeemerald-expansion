@@ -1766,6 +1766,14 @@
     {
       "id": "MAPSEC_LIMBURG",
       "name": "LIMBURG"
+    },
+    {
+      "id": "MAPSEC_LIMBURG_WILDERS_HOUSE",
+      "name": "WILDERS' HUIS"
+    },
+    {
+      "id": "MAPSEC_LIMBURG_CAS_HUIS",
+      "name": "CAS' HUIS"
     }
   ]
 }
