@@ -399,6 +399,14 @@
       "y": 5,
       "respawn_map": "MAP_AMSTERDAM_CENTRUM_FRITS_HUIS",
       "respawn_npc": "LOCALID_NONE"
+    },
+    {
+      "id": "HEAL_LOCATION_LIMBURG_POKECENTER",
+      "map": "MAP_LIMBURG_POKECENTER",
+      "x": 4,
+      "y": 6,
+      "respawn_map": "MAP_LIMBURG_POKECENTER",
+      "respawn_npc": "LOCALID_NONE"
     }
   ]
 }
