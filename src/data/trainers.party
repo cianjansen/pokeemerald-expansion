@@ -17828,3 +17828,44 @@ Level: 62
 - Ice Beam
 - Recover
 - Toxic
+
+=== TRAINER_LIMBURG_CAS_HUIS_CAS ===
+Name: CAS
+Class: Pokefan
+Pic: Pokefan M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Blaziken
+Hardy Nature
+Level: 72
+- Flare Blitz
+- Close Combat
+- Stone Edge
+- Swords Dance
+
+Shiftry
+Hardy Nature
+Level: 72
+- Leaf Storm
+- Sucker Punch
+- Explosion
+- Fake Out
+
+Jirachi
+Hardy Nature
+Level: 72
+- Iron Head
+- Psychic
+- Fire Punch
+- Ice Punch
+
+Mew
+Hardy Nature
+Level: 72
+- Psychic
+- Aura Sphere
+- Fire Blast
+- Recover

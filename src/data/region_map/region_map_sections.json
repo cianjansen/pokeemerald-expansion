@@ -1768,8 +1768,24 @@
       "name": "LIMBURG"
     },
     {
+      "id": "MAPSEC_LIMBURG_WILDERS_HOUSE",
+      "name": "WILDERS' HUIS"
+    },
+    {
+      "id": "MAPSEC_LIMBURG_CAS_HUIS",
+      "name": "CAS' HUIS"
+    },
+    {
       "id": "MAPSEC_AMSTERDAM_CENTRUM_MACUMBA",
       "name": "FIESTA MACUMBA"
+    },
+    {
+      "id": "MAPSEC_LIMBURG_POKECENTER",
+      "name": "DRUGSLAB - LIMBURG"
+    },
+    {
+      "id": "MAPSEC_LIMBURG_POKEMART",
+      "name": "KRUIDVAT"
     }
   ]
 }
